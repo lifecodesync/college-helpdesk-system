@@ -250,8 +250,6 @@ DOCUMENT_CHUNKS: List[Dict[str, Any]] = [
         "page_number": 2,
         "content": "DYPCET B.TECH CSE FINAL YEAR (SEMESTER 8) CURRICULUM:\n1. Industry Internship / Full Semester Industrial Training (Course Code: CS406) - 12 Credits (Minimum 16 weeks duration at recognized tech organization with weekly mentor evaluation).\nOR Major Capstone Project Phase-II (CS407) - 12 Credits (Implementation, Testing, Paper Publication in Scopus/UGC CARE journal, External Defense).\n2. Open Elective IV: Management Information Systems / Intellectual Property Rights (CS408) - 3 Credits.\nTotal Semester 8 Credits: 15 Credits. Overall Degree requirement: 160 Credits.",
         "metadata": {"semester": "8", "department": "CSE", "source": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf"}
-    }
-]
     },
     {
         "id": "c4444444-0001-0000-0000-000000000001",
