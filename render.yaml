@@ -23,11 +23,11 @@ services:
   - type: web
     name: college-helpdesk-frontend
     runtime: static
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
+      # React Router Single Page Application fallback
       - type: rewrite
         source: /*
         destination: /index.html
