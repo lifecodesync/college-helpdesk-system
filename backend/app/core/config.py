@@ -9,9 +9,9 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     
     # Supabase Configuration
-    SUPABASE_URL: str = ""
-    SUPABASE_KEY: str = ""
-    SUPABASE_SERVICE_ROLE_KEY: str = ""
+    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "https://ndfljoticvoyogezaewg.supabase.co")
+    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kZmxqb3RpY3ZveW9nZXphZXdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUwNjkwMTcsImV4cCI6MjExMDY0NTAxN30.dNct-daf0T6BFAmrqRQGNhe2_vppU0XdF4B40Y5y5Xc")
+    SUPABASE_SERVICE_ROLE_KEY: str = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kZmxqb3RpY3ZveW9nZXphZXdnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5NTA2OTAxNywiZXhwIjoyMTEwNjQ1MDE3fQ.9WQOoTiziF8irzxqS2Sw4STdURL7ZtHLQB1bypBP8oY")
     
     # AI / LLM
     GEMINI_API_KEY: str = ""
