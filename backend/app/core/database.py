@@ -35,66 +35,66 @@ DEPARTMENTS: List[Dict[str, Any]] = [
         "id": "11111111-1111-1111-1111-111111111111",
         "code": "CSE",
         "name": "Computer Science & Engineering",
-        "description": "Undergraduate and postgraduate degrees in computing, AI, and cybersecurity.",
-        "hod_name": "Dr. S. K. Narayanan",
-        "email": "hod.cse@college.edu",
-        "phone": "+91 9876543210",
-        "location": "Block A, 3rd Floor",
+        "description": "B.Tech & M.Tech in Computer Science & Engineering. Autonomous curriculum covering AI, Cloud Systems, and Full-Stack Development.",
+        "hod_name": "Dr. A. N. Jadhav",
+        "email": "hod.cse@dypgroup.edu.in",
+        "phone": "+91 231 2601431",
+        "location": "Main Academic Wing, 2nd Floor, DYPCET Kasaba Bawada",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "22222222-2222-2222-2222-222222222222",
-        "code": "ECE",
-        "name": "Electronics & Communication",
-        "description": "VLSI, Embedded Systems, IoT, and Signal Processing research and labs.",
-        "hod_name": "Dr. Sunita Rao",
-        "email": "hod.ece@college.edu",
-        "phone": "+91 9876543211",
-        "location": "Block B, 2nd Floor",
+        "code": "ETC",
+        "name": "Electronics & Telecommunication",
+        "description": "VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.",
+        "hod_name": "Dr. S. B. Patil",
+        "email": "hod.etc@dypgroup.edu.in",
+        "phone": "+91 231 2601432",
+        "location": "E&TC Block, 1st Floor, DYPCET",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "33333333-3333-3333-3333-333333333333",
         "code": "MECH",
         "name": "Mechanical Engineering",
-        "description": "Thermodynamics, Robotics, CAD/CAM, and Automobile engineering.",
-        "hod_name": "Dr. Rajesh Gupta",
-        "email": "hod.mech@college.edu",
-        "phone": "+91 9876543212",
-        "location": "Block C, Ground Floor",
+        "description": "Automotive Engineering, Robotics & Automation, Thermal Systems, and CAD/CAM research.",
+        "hod_name": "Dr. V. R. Chougule",
+        "email": "hod.mech@dypgroup.edu.in",
+        "phone": "+91 231 2601433",
+        "location": "Mechanical Workshop Complex, DYPCET",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "44444444-4444-4444-4444-444444444444",
         "code": "ADM",
-        "name": "Admissions & Scholarships",
-        "description": "Central admissions counseling, merit scholarships, and verification.",
-        "hod_name": "Prof. Anil Deshmukh",
-        "email": "admissions@college.edu",
-        "phone": "+91 9876543213",
-        "location": "Admin Block, Room 101",
+        "name": "Student Section & Admissions",
+        "description": "Central admissions counseling, bonafide verification, scholarships (MahaDBT/EBC), and student welfare.",
+        "hod_name": "Prof. R. S. Patil",
+        "email": "studentsection@dypgroup.edu.in",
+        "phone": "+91 231 2601434",
+        "location": "Administrative Building, Ground Floor, DYPCET",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "55555555-5555-5555-5555-555555555555",
         "code": "EXAM",
-        "name": "Examination Cell",
-        "description": "Semester exams, re-evaluations, grade cards, and degree certificates.",
-        "hod_name": "Dr. Meenakshi Sundaram",
-        "email": "examcell@college.edu",
-        "phone": "+91 9876543214",
-        "location": "Admin Block, Room 204",
+        "name": "Autonomous Examination Cell",
+        "description": "Autonomous end-semester exams, re-evaluation, grade sheets, SGPA/CGPA transcripts, and degree certificates.",
+        "hod_name": "Dr. M. M. Kulkarni (COE)",
+        "email": "coe@dypgroup.edu.in",
+        "phone": "+91 231 2601435",
+        "location": "Administrative Building, Room 204, DYPCET",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "66666666-6666-6666-6666-666666666666",
         "code": "ACC",
-        "name": "Accounts & Finance",
-        "description": "Tuition fees, hostel dues, bus pass payment, and fee clearance.",
-        "hod_name": "Mr. K. V. Raman",
-        "email": "accounts@college.edu",
-        "phone": "+91 9876543215",
-        "location": "Admin Block, Ground Floor",
+        "name": "Accounts & Finance Section",
+        "description": "College tuition fees, bus transport, hostel fee clearance, scholarship credits, and fee receipts.",
+        "hod_name": "Mr. V. A. Bhosale",
+        "email": "accounts@dypgroup.edu.in",
+        "phone": "+91 231 2601436",
+        "location": "Administrative Building, Counter 3-5, DYPCET",
         "created_at": datetime.now(timezone.utc)
     }
 ]
@@ -170,58 +170,58 @@ PROFILES: List[Dict[str, Any]] = [
 DOCUMENTS: List[Dict[str, Any]] = [
     {
         "id": "d1111111-1111-1111-1111-111111111111",
-        "title": "Academic Regulations & Attendance Policy 2026",
-        "filename": "Academic_Regulations_2026.pdf",
+        "title": "DYPCET Autonomous Academic Regulations & Attendance Policy 2024–25",
+        "filename": "DYPCET_Academic_Regulations_2024_25.pdf",
         "file_type": "pdf",
-        "file_size": 1425000,
-        "storage_path": "uploads/Academic_Regulations_2026.pdf",
+        "file_size": 1845000,
+        "storage_path": "uploads/DYPCET_Academic_Regulations_2024_25.pdf",
         "department_id": "11111111-1111-1111-1111-111111111111",
         "uploaded_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
         "status": "indexed",
         "chunk_count": 2,
-        "summary": "Rules regarding minimum attendance criteria (75%), grading scale, condonation process, and credit requirements for B.Tech graduation.",
+        "summary": "Rules regarding minimum attendance criteria (75%), medical condonation process (Rs. 1,000 fee with Dean approval), 10-point CGPA grading system, and Semester 7/8 graduation requirements.",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d2222222-2222-2222-2222-222222222222",
-        "title": "Tuition Fee Payment, Scholarship & Refund Rules",
-        "filename": "Fee_Payment_Guidelines.pdf",
+        "title": "DYPCET B.Tech Computer Science & Engineering Final Year Syllabus (Sem 7 & 8)",
+        "filename": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf",
         "file_type": "pdf",
-        "file_size": 845000,
-        "storage_path": "uploads/Fee_Payment_Guidelines.pdf",
-        "department_id": "66666666-6666-6666-6666-666666666666",
+        "file_size": 2450000,
+        "storage_path": "uploads/DYPCET_BTech_CSE_FinalYear_Syllabus.pdf",
+        "department_id": "11111111-1111-1111-1111-111111111111",
         "uploaded_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
         "status": "indexed",
-        "chunk_count": 1,
-        "summary": "Semester fee deadlines, payment methods (Net Banking/UPI), late fine calculation (Rs 100/day), installment schemes, and refund percentages.",
+        "chunk_count": 2,
+        "summary": "Detailed DYPCET CSE autonomous curriculum for Final Year: Semester 7 courses (Deep Learning, Cloud Computing, Big Data, Capstone Project Phase-I) and Semester 8 (Industry Internship / Major Project Phase-II).",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d3333333-3333-3333-3333-333333333333",
-        "title": "Campus Hostel Rules, Curfew & Mess Regulations",
-        "filename": "Hostel_Rules_and_Mess_Policy.docx",
-        "file_type": "docx",
-        "file_size": 620000,
-        "storage_path": "uploads/Hostel_Rules_and_Mess_Policy.docx",
+        "title": "DYPCET Student Grievance Redressal & Campus Guidelines 2024–25",
+        "filename": "DYPCET_Student_Grievance_Guidelines.pdf",
+        "file_type": "pdf",
+        "file_size": 950000,
+        "storage_path": "uploads/DYPCET_Student_Grievance_Guidelines.pdf",
         "department_id": "44444444-4444-4444-4444-444444444444",
         "uploaded_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
         "status": "indexed",
         "chunk_count": 1,
-        "summary": "Curfew timings (9:30 PM weekdays, 10:00 PM Sundays), leave application procedures, mess menu rebate norms, visitors policy, and helpline.",
+        "summary": "Standard Operating Procedure (SOP) for student grievances at DYPCET Kolhapur: hall ticket issues, fee receipt errors, hostel curfew rules, and anti-ragging measures.",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d4444444-4444-4444-4444-444444444444",
-        "title": "Examination Cell Rules, Malpractice and Re-evaluation",
-        "filename": "Exam_Cell_Guidelines.pdf",
+        "title": "DYPCET Autonomous Examination Cell Rules & Re-evaluation Norms",
+        "filename": "DYPCET_Exam_Cell_Regulations.pdf",
         "file_type": "pdf",
-        "file_size": 910000,
-        "storage_path": "uploads/Exam_Cell_Guidelines.pdf",
+        "file_size": 1120000,
+        "storage_path": "uploads/DYPCET_Exam_Cell_Regulations.pdf",
         "department_id": "55555555-5555-5555-5555-555555555555",
         "uploaded_by": "cccccccc-cccc-cccc-cccc-cccccccccccc",
         "status": "indexed",
         "chunk_count": 1,
-        "summary": "Procedure for end-semester re-evaluation (Rs 1,000 fee), photocopy of answer booklet (Rs 400), supplementary exam registration, and hall conduct.",
+        "summary": "Rules for DYPCET autonomous semester examinations: script photocopy application (Rs. 400), challenge re-evaluation (Rs. 1,000), grade improvement exams, and degree clearance.",
         "created_at": datetime.now(timezone.utc)
     }
 ]
@@ -232,32 +232,26 @@ DOCUMENT_CHUNKS: List[Dict[str, Any]] = [
         "document_id": "d1111111-1111-1111-1111-111111111111",
         "chunk_index": 1,
         "page_number": 1,
-        "content": "ACADEMIC REGULATIONS - SECTION 4: ATTENDANCE REQUIREMENTS\nEvery candidate must secure a minimum of 75% overall attendance in aggregate across all registered theory and laboratory courses in a semester. Students having attendance between 65% and 74.9% due to medical reasons or officially sanctioned extracurricular participation may be granted condonation of attendance by the Academic Dean upon payment of a prescribed condonation fee of Rs. 1,000 per subject. Students with attendance below 65% will be detained and not permitted to write end-semester examinations.",
-        "metadata": {"section": "4.1", "source": "Academic_Regulations_2026.pdf", "page": 1}
-    },
-    {
-        "id": "c1111111-0002-0000-0000-000000000002",
-        "document_id": "d1111111-1111-1111-1111-111111111111",
-        "chunk_index": 2,
-        "page_number": 2,
-        "content": "ACADEMIC REGULATIONS - SECTION 7: GRADING SCHEME & CGPA\nThe evaluation is based on Continuous Internal Assessment (CIA: 40 marks) and End Semester Examination (ESE: 60 marks). Grades awarded:\nO (Outstanding): 10 grade points (90-100 marks)\nA+ (Excellent): 9 grade points (80-89 marks)\nA (Very Good): 8 grade points (70-79 marks)\nB+ (Good): 7 grade points (60-69 marks)\nB (Above Average): 6 grade points (50-59 marks)\nC (Average / Pass): 5 grade points (45-49 marks)\nF (Fail): 0 grade points (<45 marks).\nMinimum CGPA required to obtain B.Tech degree is 5.0 with zero active backlogs.",
-        "metadata": {"section": "7.2", "source": "Academic_Regulations_2026.pdf", "page": 2}
+        "content": "DYPCET AUTONOMOUS REGULATIONS - SECTION 4: ATTENDANCE REQUIREMENTS\nEvery candidate registered for B.Tech at D. Y. Patil College of Engineering and Technology, Kolhapur must maintain minimum 75% overall attendance aggregate across theory and practical labs. Students having attendance between 65% and 74.9% with valid medical certificates or institutional sports representation may receive condonation from the Dean (Academics) on payment of Rs. 1,000 condonation fee per course. Attendance below 65% attracts detention from End Semester Examination (ESE).",
+        "metadata": {"section": "4.1", "source": "DYPCET_Academic_Regulations_2024_25.pdf", "college": "DYPCET Kolhapur"}
     },
     {
         "id": "c2222222-0001-0000-0000-000000000001",
         "document_id": "d2222222-2222-2222-2222-222222222222",
         "chunk_index": 1,
         "page_number": 1,
-        "content": "FEES & SCHOLARSHIP GUIDELINES - SECTION 2: TUITION FEE PAYMENT\nSemester tuition fees must be cleared on or before the 15th of the starting semester month. A grace period of 7 days is permitted with a late fine of Rs. 100 per day. Payments must strictly be processed through the official ERP student portal via Net Banking, Debit/Credit Card, or UPI. Cash payments are not accepted at the counter. For students applying for educational loans, bonafide estimation letters can be collected from Room 102 within 2 business days.",
-        "metadata": {"section": "2.1", "source": "Fee_Payment_Guidelines.pdf", "page": 1}
+        "content": "DYPCET B.TECH CSE FINAL YEAR (SEMESTER 7) SYLLABUS & CURRICULUM:\n1. Deep Learning & Neural Networks (Course Code: CS401) - 4 Credits (CNNs, RNNs, Transformers, Attention Mechanism, PyTorch/TensorFlow).\n2. Cloud Computing & DevOps (Course Code: CS402) - 4 Credits (AWS/GCP architectures, Docker, Kubernetes, CI/CD pipelines).\n3. Big Data Analytics (Course Code: CS403) - 3 Credits (Hadoop HDFS, Apache Spark, MapReduce, Kafka).\n4. Program Elective III: Cyber Security & Digital Forensics (CS404) - 3 Credits.\n5. Capstone Project Phase-I (CS405) - 4 Credits (Problem identification, SRS, Architectural Design, Prototype demo).\nTotal Semester 7 Credits: 18 Credits.",
+        "metadata": {"semester": "7", "department": "CSE", "source": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf"}
     },
     {
-        "id": "c3333333-0001-0000-0000-000000000001",
-        "document_id": "d3333333-3333-3333-3333-333333333333",
-        "chunk_index": 1,
-        "page_number": 1,
-        "content": "HOSTEL REGULATIONS - SECTION 3: ENTRY & CURFEW TIMINGS\nHostel gates will close promptly at 9:30 PM for all residents on weekdays (Monday to Saturday) and 10:00 PM on Sundays. Late entry requires prior written approval from the Chief Warden. Any student arriving after curfew without written permission will incur a fine of Rs. 500 on the first offense and disciplinary notice to parents on subsequent violations. Night-out passes must be submitted at least 24 hours in advance via the student portal.",
-        "metadata": {"section": "3.1", "source": "Hostel_Rules_and_Mess_Policy.docx", "page": 1}
+        "id": "c2222222-0002-0000-0000-000000000002",
+        "document_id": "d2222222-2222-2222-2222-222222222222",
+        "chunk_index": 2,
+        "page_number": 2,
+        "content": "DYPCET B.TECH CSE FINAL YEAR (SEMESTER 8) CURRICULUM:\n1. Industry Internship / Full Semester Industrial Training (Course Code: CS406) - 12 Credits (Minimum 16 weeks duration at recognized tech organization with weekly mentor evaluation).\nOR Major Capstone Project Phase-II (CS407) - 12 Credits (Implementation, Testing, Paper Publication in Scopus/UGC CARE journal, External Defense).\n2. Open Elective IV: Management Information Systems / Intellectual Property Rights (CS408) - 3 Credits.\nTotal Semester 8 Credits: 15 Credits. Overall Degree requirement: 160 Credits.",
+        "metadata": {"semester": "8", "department": "CSE", "source": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf"}
+    }
+]
     },
     {
         "id": "c4444444-0001-0000-0000-000000000001",
@@ -462,11 +456,20 @@ QUERY_LOGS: List[Dict[str, Any]] = [
 class Database:
     @staticmethod
     def get_departments() -> List[Dict[str, Any]]:
+        global supabase_client
+        if supabase_client:
+            try:
+                res = supabase_client.table("departments").select("*").execute()
+                if res.data and len(res.data) > 0:
+                    return res.data
+            except Exception as e:
+                print(f"Error fetching departments from Supabase: {e}")
         return DEPARTMENTS
 
     @staticmethod
     def get_department_by_id(dept_id: str) -> Optional[Dict[str, Any]]:
-        return next((d for d in DEPARTMENTS if d["id"] == dept_id), None)
+        depts = Database.get_departments()
+        return next((d for d in depts if d["id"] == dept_id), None)
 
     @staticmethod
     def get_profiles() -> List[Dict[str, Any]]:
@@ -500,6 +503,14 @@ class Database:
 
     @staticmethod
     def get_documents() -> List[Dict[str, Any]]:
+        global supabase_client
+        if supabase_client:
+            try:
+                res = supabase_client.table("documents").select("*").execute()
+                if res.data and len(res.data) > 0:
+                    return res.data
+            except Exception as e:
+                print(f"Error fetching documents from Supabase: {e}")
         return DOCUMENTS
 
     @staticmethod

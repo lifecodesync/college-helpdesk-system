@@ -31,6 +31,7 @@ import StatCard from '../components/StatCard';
 import TicketModal from '../components/TicketModal';
 import NoticeEditModal from '../components/NoticeEditModal';
 import FaqModal from '../components/FaqModal';
+import dypcetEmblem from '../assets/dypcet-emblem.png';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -106,17 +107,22 @@ export default function Dashboard() {
         {/* Student Banner */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-900 text-white p-7 md:p-8 shadow-lg border border-blue-800">
           <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-800/80 border border-blue-700 text-blue-200 text-xs font-semibold">
-                <GraduationCap className="w-3.5 h-3.5 text-blue-300" />
-                Final Year B.Tech CSE (Semester 7) • Academic Year 2024–25
+            <div className="flex items-start gap-4">
+              <div className="hidden sm:flex w-14 h-14 rounded-2xl bg-white p-1.5 shadow-lg border border-blue-200/50 flex-shrink-0 items-center justify-center">
+                <img src={dypcetEmblem} alt="DYPCET Emblem" className="w-full h-full object-contain" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-                Welcome, {user?.full_name} 🎓
-              </h2>
-              <p className="text-xs text-blue-100 max-w-xl">
-                Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '21CS0104'}</span> • Final Year (Semester 7 - B.Tech CSE) • Academic Year 2024–25 • Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
-              </p>
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-800/80 border border-blue-700 text-blue-200 text-xs font-semibold">
+                  <GraduationCap className="w-3.5 h-3.5 text-blue-300" />
+                  Final Year B.Tech CSE (Semester 7) • Academic Year 2024–25
+                </div>
+                <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+                  Welcome, {user?.full_name} 🎓
+                </h2>
+                <p className="text-xs text-blue-100 max-w-xl">
+                  Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '21CS0104'}</span> • Final Year (Semester 7 - B.Tech CSE) • Academic Year 2024–25 • Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center gap-3">

@@ -14,6 +14,7 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { api } from '../services/api';
 import SupabaseModal from './SupabaseModal';
+import dypcetEmblem from '../assets/dypcet-emblem.png';
 
 export default function Navbar({ toggleSidebar, isSidebarOpen }) {
   const { user, logout } = useAuth();
@@ -72,6 +73,9 @@ export default function Navbar({ toggleSidebar, isSidebarOpen }) {
         </button>
 
         <div className="hidden sm:flex items-center gap-2 text-xs">
+          <div className="w-7 h-7 rounded-lg bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-sm">
+            <img src={dypcetEmblem} alt="DYPCET Emblem" className="w-full h-full object-contain" />
+          </div>
           <span className="font-bold text-blue-900">DYPCET Kolhapur</span>
           <span className="text-slate-300">/</span>
           <span className="font-medium text-slate-700 capitalize">{user?.role || 'Helpdesk'} Desk</span>

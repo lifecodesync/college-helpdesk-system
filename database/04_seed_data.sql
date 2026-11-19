@@ -3,16 +3,23 @@
 -- Comprehensive Seed Data for Testing & Evaluation
 -- ==============================================================================
 
--- 1. Insert Departments
+-- 1. Insert Departments (D. Y. Patil College of Engineering & Technology, Kolhapur)
 INSERT INTO departments (id, code, name, description, hod_name, email, phone, location)
 VALUES
-  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'Undergraduate and postgraduate degrees in computing, AI, and cybersecurity.', 'Dr. S. K. Narayanan', 'hod.cse@college.edu', '+91 9876543210', 'Block A, 3rd Floor'),
-  ('22222222-2222-2222-2222-222222222222', 'ECE', 'Electronics & Communication', 'VLSI, Embedded Systems, IoT, and Signal Processing research and labs.', 'Dr. Sunita Rao', 'hod.ece@college.edu', '+91 9876543211', 'Block B, 2nd Floor'),
-  ('33333333-3333-3333-3333-333333333333', 'MECH', 'Mechanical Engineering', 'Thermodynamics, Robotics, CAD/CAM, and Automobile engineering.', 'Dr. Rajesh Gupta', 'hod.mech@college.edu', '+91 9876543212', 'Block C, Ground Floor'),
-  ('44444444-4444-4444-4444-444444444444', 'ADM', 'Admissions & Scholarships', 'Central admissions counseling, merit scholarships, and verification.', 'Prof. Anil Deshmukh', 'admissions@college.edu', '+91 9876543213', 'Admin Block, Room 101'),
-  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'Examination Cell', 'Semester exams, re-evaluations, grade cards, and degree certificates.', 'Dr. Meenakshi Sundaram', 'examcell@college.edu', '+91 9876543214', 'Admin Block, Room 204'),
-  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Finance', 'Tuition fees, hostel dues, bus pass payment, and fee clearance.', 'Mr. K. V. Raman', 'accounts@college.edu', '+91 9876543215', 'Admin Block, Ground Floor')
-ON CONFLICT (id) DO NOTHING;
+  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'B.Tech & M.Tech in Computer Science & Engineering. Autonomous curriculum covering AI, Cloud Systems, and Full-Stack Development.', 'Dr. A. N. Jadhav', 'hod.cse@dypgroup.edu.in', '+91 231 2601431', 'Main Academic Wing, 2nd Floor, DYPCET Kasaba Bawada'),
+  ('22222222-2222-2222-2222-222222222222', 'ETC', 'Electronics & Telecommunication', 'VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.', 'Dr. S. B. Patil', 'hod.etc@dypgroup.edu.in', '+91 231 2601432', 'E&TC Block, 1st Floor, DYPCET'),
+  ('33333333-3333-3333-3333-333333333333', 'MECH', 'Mechanical Engineering', 'Automotive Engineering, Robotics & Automation, Thermal Systems, and CAD/CAM research.', 'Dr. V. R. Chougule', 'hod.mech@dypgroup.edu.in', '+91 231 2601433', 'Mechanical Workshop Complex, DYPCET'),
+  ('44444444-4444-4444-4444-444444444444', 'ADM', 'Student Section & Admissions', 'Central admissions counseling, bonafide verification, scholarships (MahaDBT/EBC), and student welfare.', 'Prof. R. S. Patil', 'studentsection@dypgroup.edu.in', '+91 231 2601434', 'Administrative Building, Ground Floor, DYPCET'),
+  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'Autonomous Examination Cell', 'Autonomous end-semester exams, re-evaluation, grade sheets, SGPA/CGPA transcripts, and degree certificates.', 'Dr. M. M. Kulkarni (COE)', 'coe@dypgroup.edu.in', '+91 231 2601435', 'Administrative Building, Room 204, DYPCET'),
+  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Finance Section', 'College tuition fees, bus transport, hostel fee clearance, scholarship credits, and fee receipts.', 'Mr. V. A. Bhosale', 'accounts@dypgroup.edu.in', '+91 231 2601436', 'Administrative Building, Counter 3-5, DYPCET')
+ON CONFLICT (id) DO UPDATE SET
+  code = EXCLUDED.code,
+  name = EXCLUDED.name,
+  description = EXCLUDED.description,
+  hod_name = EXCLUDED.hod_name,
+  email = EXCLUDED.email,
+  phone = EXCLUDED.phone,
+  location = EXCLUDED.location;
 
 -- 2. Insert Profiles (Admin, Faculty, Students)
 INSERT INTO profiles (id, email, full_name, role, department_id, roll_no, phone, avatar_url)

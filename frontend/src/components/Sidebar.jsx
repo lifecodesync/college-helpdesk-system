@@ -17,6 +17,7 @@ import {
   LogOut
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import dypcetEmblem from '../assets/dypcet-emblem.png';
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   const { user, logout } = useAuth();
@@ -77,9 +78,9 @@ export default function Sidebar({ isOpen, setIsOpen }) {
       <div className="flex flex-col h-full">
         
         {/* College Seal & Header */}
-        <div className="flex items-center gap-3 px-5 h-16 border-b border-slate-200 bg-slate-50/80">
-          <div className="w-10 h-10 rounded-xl bg-blue-900 text-white flex items-center justify-center shadow-md shadow-blue-900/20 font-bold flex-shrink-0">
-            <GraduationCap className="w-6 h-6" />
+        <div className="flex items-center gap-3 px-4 h-16 border-b border-slate-200 bg-slate-50/80">
+          <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shadow-sm flex-shrink-0">
+            <img src={dypcetEmblem} alt="DYPCET Emblem" className="w-full h-full object-contain" />
           </div>
           <div className="min-w-0">
             <h1 className="font-bold text-slate-900 text-sm tracking-tight truncate flex items-center gap-1.5">

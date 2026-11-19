@@ -287,34 +287,46 @@ CREATE POLICY "Authenticated users can log queries"
 CREATE POLICY "Users can update feedback on their queries"
   ON query_logs FOR UPDATE TO authenticated USING (user_id = auth.uid() OR get_current_user_role() = 'admin');
 
--- 5. SEED DATA
+-- 5. SEED DATA (D. Y. Patil College of Engineering and Technology, Kolhapur)
 INSERT INTO departments (id, code, name, description, hod_name, email, phone, location)
 VALUES
-  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'Undergraduate and postgraduate degrees in computing, AI, and cybersecurity.', 'Dr. S. K. Narayanan', 'hod.cse@college.edu', '+91 9876543210', 'Block A, 3rd Floor'),
-  ('22222222-2222-2222-2222-222222222222', 'ECE', 'Electronics & Communication', 'VLSI, Embedded Systems, IoT, and Signal Processing research and labs.', 'Dr. Sunita Rao', 'hod.ece@college.edu', '+91 9876543211', 'Block B, 2nd Floor'),
-  ('33333333-3333-3333-3333-333333333333', 'MECH', 'Mechanical Engineering', 'Thermodynamics, Robotics, CAD/CAM, and Automobile engineering.', 'Dr. Rajesh Gupta', 'hod.mech@college.edu', '+91 9876543212', 'Block C, Ground Floor'),
-  ('44444444-4444-4444-4444-444444444444', 'ADM', 'Admissions & Scholarships', 'Central admissions counseling, merit scholarships, and verification.', 'Prof. Anil Deshmukh', 'admissions@college.edu', '+91 9876543213', 'Admin Block, Room 101'),
-  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'Examination Cell', 'Semester exams, re-evaluations, grade cards, and degree certificates.', 'Dr. Meenakshi Sundaram', 'examcell@college.edu', '+91 9876543214', 'Admin Block, Room 204'),
-  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Finance', 'Tuition fees, hostel dues, bus pass payment, and fee clearance.', 'Mr. K. V. Raman', 'accounts@college.edu', '+91 9876543215', 'Admin Block, Ground Floor')
-ON CONFLICT (id) DO NOTHING;
+  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'B.Tech & M.Tech in Computer Science & Engineering. Autonomous curriculum covering AI, Cloud Systems, and Full-Stack Development.', 'Dr. A. N. Jadhav', 'hod.cse@dypgroup.edu.in', '+91 231 2601431', 'Main Academic Wing, 2nd Floor, DYPCET Kasaba Bawada'),
+  ('22222222-2222-2222-2222-222222222222', 'ETC', 'Electronics & Telecommunication', 'VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.', 'Dr. S. B. Patil', 'hod.etc@dypgroup.edu.in', '+91 231 2601432', 'E&TC Block, 1st Floor, DYPCET'),
+  ('33333333-3333-3333-3333-333333333333', 'MECH', 'Mechanical Engineering', 'Automotive Engineering, Robotics & Automation, Thermal Systems, and CAD/CAM research.', 'Dr. V. R. Chougule', 'hod.mech@dypgroup.edu.in', '+91 231 2601433', 'Mechanical Workshop Complex, DYPCET'),
+  ('44444444-4444-4444-4444-444444444444', 'ADM', 'Student Section & Admissions', 'Central admissions counseling, bonafide verification, scholarships (MahaDBT/EBC), and student welfare.', 'Prof. R. S. Patil', 'studentsection@dypgroup.edu.in', '+91 231 2601434', 'Administrative Building, Ground Floor, DYPCET'),
+  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'Autonomous Examination Cell', 'Autonomous end-semester exams, re-evaluation, grade sheets, SGPA/CGPA transcripts, and degree certificates.', 'Dr. M. M. Kulkarni (COE)', 'coe@dypgroup.edu.in', '+91 231 2601435', 'Administrative Building, Room 204, DYPCET'),
+  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Finance Section', 'College tuition fees, bus transport, hostel fee clearance, scholarship credits, and fee receipts.', 'Mr. V. A. Bhosale', 'accounts@dypgroup.edu.in', '+91 231 2601436', 'Administrative Building, Counter 3-5, DYPCET')
+ON CONFLICT (id) DO UPDATE SET
+  code = EXCLUDED.code,
+  name = EXCLUDED.name,
+  description = EXCLUDED.description,
+  hod_name = EXCLUDED.hod_name,
+  email = EXCLUDED.email,
+  phone = EXCLUDED.phone,
+  location = EXCLUDED.location;
 
 INSERT INTO profiles (id, email, full_name, role, department_id, roll_no, phone, avatar_url)
 VALUES
-  ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'admin@college.edu', 'Dr. Ramesh Sharma (Admin)', 'admin', '11111111-1111-1111-1111-111111111111', 'EMP-ADM-01', '+91 9000000001', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150'),
-  ('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'faculty.verma@college.edu', 'Prof. Priya Verma', 'faculty', '11111111-1111-1111-1111-111111111111', 'EMP-CSE-104', '+91 9000000002', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150'),
-  ('cccccccc-cccc-cccc-cccc-cccccccccccc', 'faculty.patel@college.edu', 'Prof. Amit Patel', 'faculty', '55555555-5555-5555-5555-555555555555', 'EMP-EXM-042', '+91 9000000003', 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150'),
-  ('dddddddd-dddd-dddd-dddd-dddddddddddd', 'aarav.mehta@student.college.edu', 'Aarav Mehta', 'student', '11111111-1111-1111-1111-111111111111', '22CS0104', '+91 9000000004', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
-  ('eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'sneha.reddy@student.college.edu', 'Sneha Reddy', 'student', '22222222-2222-2222-2222-222222222222', '22EC0088', '+91 9000000005', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150'),
-  ('ffffffff-ffff-ffff-ffff-ffffffffffff', 'rohan.das@student.college.edu', 'Rohan Das', 'student', '33333333-3333-3333-3333-333333333333', '23ME0052', '+91 9000000006', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
-ON CONFLICT (id) DO NOTHING;
+  ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'admin@dypgroup.edu.in', 'Dr. Ramesh Sharma (Central Admin)', 'admin', '11111111-1111-1111-1111-111111111111', 'EMP-ADM-01', '+91 9000000001', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150'),
+  ('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'faculty.verma@dypgroup.edu.in', 'Prof. Priya Verma (CSE Faculty Advisor)', 'faculty', '11111111-1111-1111-1111-111111111111', 'EMP-CSE-104', '+91 9000000002', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150'),
+  ('cccccccc-cccc-cccc-cccc-cccccccccccc', 'faculty.patel@dypgroup.edu.in', 'Prof. Amit Patel (COE Incharge)', 'faculty', '55555555-5555-5555-5555-555555555555', 'EMP-EXM-042', '+91 9000000003', 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150'),
+  ('dddddddd-dddd-dddd-dddd-dddddddddddd', 'aarav.mehta@student.dypcet.ac.in', 'Aarav Mehta (Final Year B.Tech CSE)', 'student', '11111111-1111-1111-1111-111111111111', '21CS0104', '+91 9000000004', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
+  ('eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'sneha.reddy@student.dypcet.ac.in', 'Sneha Reddy', 'student', '22222222-2222-2222-2222-222222222222', '22ET0088', '+91 9000000005', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150'),
+  ('ffffffff-ffff-ffff-ffff-ffffffffffff', 'rohan.das@student.dypcet.ac.in', 'Rohan Das', 'student', '33333333-3333-3333-3333-333333333333', '23ME0052', '+91 9000000006', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
+ON CONFLICT (id) DO UPDATE SET
+  full_name = EXCLUDED.full_name,
+  email = EXCLUDED.email,
+  roll_no = EXCLUDED.roll_no;
 
 INSERT INTO documents (id, title, filename, file_type, file_size, storage_path, department_id, uploaded_by, status, chunk_count, summary)
 VALUES
-  ('d1111111-1111-1111-1111-111111111111', 'Academic Regulations & Attendance Policy 2026', 'Academic_Regulations_2026.pdf', 'pdf', 1425000, 'documents/Academic_Regulations_2026.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 4, 'Rules regarding minimum attendance criteria, internal grading breakdown, condonation process, and credit requirements for graduation.'),
-  ('d2222222-2222-2222-2222-222222222222', 'Tuition Fee Payment, Scholarship & Refund Rules', 'Fee_Payment_Guidelines.pdf', 'pdf', 845000, 'documents/Fee_Payment_Guidelines.pdf', '66666666-6666-6666-6666-666666666666', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 3, 'Semester fee deadlines, payment methods (Net Banking/UPI), late fine calculation, installment schemes, and refund percentages upon withdrawal.'),
-  ('d3333333-3333-3333-3333-333333333333', 'Campus Hostel Rules, Curfew & Mess Regulations', 'Hostel_Rules_and_Mess_Policy.docx', 'docx', 620000, 'documents/Hostel_Rules_and_Mess_Policy.docx', '44444444-4444-4444-4444-444444444444', 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'indexed', 3, 'Curfew timings for boys and girls hostels, leave application procedures, mess menu rebate norms, visitors policy, and anti-ragging helpline contacts.'),
-  ('d4444444-4444-4444-4444-444444444444', 'Examination Cell Rules, Malpractice and Re-evaluation', 'Exam_Cell_Guidelines.pdf', 'pdf', 910000, 'documents/Exam_Cell_Guidelines.pdf', '55555555-5555-5555-5555-555555555555', 'cccccccc-cccc-cccc-cccc-cccccccccccc', 'indexed', 3, 'Procedure for end-semester re-evaluation, challenging evaluation, supplementary exam registration fees, and code of conduct in examination halls.')
-ON CONFLICT (id) DO NOTHING;
+  ('d1111111-1111-1111-1111-111111111111', 'DYPCET Autonomous Academic Regulations & Attendance Policy 2024–25', 'DYPCET_Academic_Regulations_2024_25.pdf', 'pdf', 1845000, 'documents/DYPCET_Academic_Regulations_2024_25.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 4, 'Rules regarding minimum attendance criteria (75%), medical condonation process (Rs. 1,000 fee with Dean approval), 10-point CGPA grading system, and Semester 7/8 graduation requirements.'),
+  ('d2222222-2222-2222-2222-222222222222', 'DYPCET B.Tech Computer Science & Engineering Final Year Syllabus (Sem 7 & 8)', 'DYPCET_BTech_CSE_FinalYear_Syllabus.pdf', 'pdf', 2450000, 'documents/DYPCET_BTech_CSE_FinalYear_Syllabus.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 3, 'Detailed DYPCET CSE autonomous curriculum for Final Year: Semester 7 courses (Deep Learning, Cloud Computing, Big Data, Capstone Project Phase-I) and Semester 8 (Industry Internship / Major Project Phase-II).'),
+  ('d3333333-3333-3333-3333-333333333333', 'DYPCET Student Grievance Redressal & Campus Guidelines 2024–25', 'DYPCET_Student_Grievance_Guidelines.pdf', 'pdf', 950000, 'documents/DYPCET_Student_Grievance_Guidelines.pdf', '44444444-4444-4444-4444-444444444444', 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'indexed', 3, 'Standard Operating Procedure (SOP) for student grievances at DYPCET Kolhapur: hall ticket issues, fee receipt errors, hostel curfew rules, and anti-ragging measures.'),
+  ('d4444444-4444-4444-4444-444444444444', 'DYPCET Autonomous Examination Cell Rules & Re-evaluation Norms', 'DYPCET_Exam_Cell_Regulations.pdf', 'pdf', 1120000, 'documents/DYPCET_Exam_Cell_Regulations.pdf', '55555555-5555-5555-5555-555555555555', 'cccccccc-cccc-cccc-cccc-cccccccccccc', 'indexed', 3, 'Rules for DYPCET autonomous semester examinations: script photocopy application (Rs. 400), challenge re-evaluation (Rs. 1,000), grade improvement exams, and degree clearance.')
+ON CONFLICT (id) DO UPDATE SET
+  title = EXCLUDED.title,
+  summary = EXCLUDED.summary;
 
 INSERT INTO document_chunks (id, document_id, chunk_index, page_number, content, metadata)
 VALUES

@@ -15,6 +15,8 @@ import {
   Layers
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import dypcetLogo from '../assets/dypcet-logo.png';
+import dypcetEmblem from '../assets/dypcet-emblem.png';
 
 export default function Login() {
   const { login, switchDemoRole } = useAuth();
@@ -107,17 +109,26 @@ export default function Login() {
       <div className="w-full max-w-4xl relative z-10 space-y-8">
         
         {/* College Header Branding */}
-        <div className="text-center space-y-3">
-          <div className="inline-flex w-16 h-16 rounded-2xl bg-blue-900 items-center justify-center text-white shadow-xl shadow-blue-900/20 ring-4 ring-blue-100 mb-1">
-            <GraduationCap className="w-9 h-9" />
-          </div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-              D. Y. Patil College of Engineering & Technology, Kolhapur
-            </h1>
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-900 mt-1">
-              DYPCET AI-Powered Student Helpdesk & Academic Assistance System
-            </p>
+        <div className="text-center space-y-4">
+          <div className="flex flex-col items-center justify-center space-y-3">
+            <div className="bg-white p-3 rounded-2xl shadow-sm border border-slate-200/80 inline-flex items-center justify-center">
+              <img 
+                src={dypcetLogo} 
+                alt="D. Y. Patil College of Engineering and Technology, Kolhapur" 
+                className="h-16 sm:h-20 w-auto object-contain" 
+              />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-blue-900 text-[11px] font-bold tracking-wide uppercase mb-1.5">
+                Autonomous Institute • NAAC 'A' Grade • Shivaji University
+              </div>
+              <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+                D. Y. Patil College of Engineering & Technology, Kolhapur
+              </h1>
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-900 mt-1">
+                DYPCET AI-Powered Student Helpdesk & Academic Assistance System
+              </p>
+            </div>
           </div>
           <p className="text-xs text-slate-500 max-w-md mx-auto">
             Choose your role below to sign in. Once signed in, your role is locked until you sign out.
