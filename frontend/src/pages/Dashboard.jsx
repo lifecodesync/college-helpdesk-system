@@ -115,7 +115,7 @@ export default function Dashboard() {
                 Welcome, {user?.full_name} 🎓
               </h2>
               <p className="text-xs text-blue-100 max-w-xl">
-                Roll No: <span className="font-mono font-bold text-amber-300">22CS0104</span> • Semester 5 B.Tech CSE • Faculty Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
+                Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '22CS0104'}</span> • Semester 5 B.Tech CSE • Faculty Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
               </p>
             </div>
 

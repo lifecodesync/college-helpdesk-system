@@ -83,7 +83,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
           </div>
           <div className="min-w-0">
             <h1 className="font-bold text-slate-900 text-sm tracking-tight truncate flex items-center gap-1.5">
-              NIET EduAssist
+              DYPCET EduAssist
             </h1>
             <p className="text-[10px] text-blue-900 font-bold truncate uppercase tracking-wider">
               {getRoleHeader()}
@@ -97,7 +97,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             <span className="font-semibold text-blue-950">Academic Year 2026-27</span>
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-200" title="System Active" />
           </div>
-          <p className="text-[10px] text-blue-800/80 mt-0.5 truncate">National Institute of Eng. & Tech.</p>
+          <p className="text-[10px] text-blue-800/80 mt-0.5 truncate">D. Y. Patil College of Eng. & Tech., Kolhapur</p>
         </div>
 
         {/* Navigation Links */}

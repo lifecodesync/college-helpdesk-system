@@ -27,7 +27,7 @@ export default function ChatBot() {
     {
       id: 'welcome',
       sender: 'bot',
-      text: `Hello ${user?.full_name?.split(' ')[0] || 'Student'}! I am the official AI Student Assistant for NIET. Ask me anything about examination rules, syllabus, fee deadlines, attendance policies, or hostel regulations. Every response is strictly grounded in official college documents with source citations.`,
+      text: `Hello ${user?.full_name?.split(' ')[0] || 'Student'}! I am the official AI Student Assistant for D. Y. Patil College of Engineering and Technology (DYPCET), Kolhapur. Ask me anything about examination rules, syllabus, fee deadlines, attendance policies, or hostel regulations. Every response is strictly grounded in official college documents with source citations.`,
       sources: [],
       confidence: 1.0,
       timestamp: new Date()
@@ -141,7 +141,7 @@ export default function ChatBot() {
           </div>
           <div>
             <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-              NIET AI Student Assistant
+              DYPCET AI Student Assistant
               <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" /> RAG Grounded
               </span>

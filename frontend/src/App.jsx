@@ -26,7 +26,7 @@ function MainLayout() {
       <div className="min-h-screen bg-slate-50 flex items-center justify-center text-xs text-slate-500">
         <div className="flex items-center gap-3">
           <div className="w-5 h-5 border-2 border-blue-900 border-t-transparent rounded-full animate-spin" />
-          <span className="font-semibold text-slate-700">Loading NIET Student Portal...</span>
+          <span className="font-semibold text-slate-700">Loading DYPCET Student Portal...</span>
         </div>
       </div>
     );

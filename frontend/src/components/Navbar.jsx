@@ -72,7 +72,7 @@ export default function Navbar({ toggleSidebar, isSidebarOpen }) {
         </button>
 
         <div className="hidden sm:flex items-center gap-2 text-xs">
-          <span className="font-bold text-blue-900">NIET Campus</span>
+          <span className="font-bold text-blue-900">DYPCET Kolhapur</span>
           <span className="text-slate-300">/</span>
           <span className="font-medium text-slate-700 capitalize">{user?.role || 'Helpdesk'} Desk</span>
           <span className="text-slate-300">/</span>
