@@ -94,7 +94,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         {/* Institution Info Card */}
         <div className="px-4 py-3 bg-blue-50/60 border-b border-blue-100/80">
           <div className="flex items-center justify-between text-[11px]">
-            <span className="font-semibold text-blue-950">Academic Year 2026-27</span>
+            <span className="font-semibold text-blue-950">Academic Year 2024–25 (Final Year)</span>
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-200" title="System Active" />
           </div>
           <p className="text-[10px] text-blue-800/80 mt-0.5 truncate">D. Y. Patil College of Eng. & Tech., Kolhapur</p>

@@ -60,7 +60,7 @@ def login(req: LoginRequest):
         
         depts = Database.get_departments()
         default_dept_id = depts[0]["id"] if depts else "11111111-1111-1111-1111-111111111111"
-        roll_no = f"24CS{random.randint(100, 999)}" if role == "student" else f"EMP-DYP-{random.randint(100, 999)}"
+        roll_no = f"21CS{random.randint(100, 999)}" if role == "student" else f"EMP-DYP-{random.randint(100, 999)}"
         
         new_profile_data = {
             "email": email,

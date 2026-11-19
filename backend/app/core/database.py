@@ -146,7 +146,7 @@ PROFILES: List[Dict[str, Any]] = [
         "full_name": "Aarav Mehta",
         "role": "student",
         "department_id": "11111111-1111-1111-1111-111111111111",
-        "roll_no": "22CS0104",
+        "roll_no": "21CS0104",
         "phone": "+91 9000000004",
         "avatar_url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150",
         "is_active": True,

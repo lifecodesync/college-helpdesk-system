@@ -76,7 +76,7 @@ export default function Navbar({ toggleSidebar, isSidebarOpen }) {
           <span className="text-slate-300">/</span>
           <span className="font-medium text-slate-700 capitalize">{user?.role || 'Helpdesk'} Desk</span>
           <span className="text-slate-300">/</span>
-          <span className="text-slate-500 font-mono text-[11px]">Academic Term 2026–27</span>
+          <span className="text-slate-500 font-mono text-[11px]">Academic Year 2024–25 (Final Year B.Tech)</span>
         </div>
       </div>
 

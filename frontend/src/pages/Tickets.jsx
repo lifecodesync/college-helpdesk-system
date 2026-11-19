@@ -119,7 +119,7 @@ export default function Tickets() {
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
             {role === 'student' 
-              ? `Logged in as ${user?.full_name} (Roll: 22CS0104) • Track responses and resolution notes`
+              ? `Logged in as ${user?.full_name} (Roll: ${user?.roll_no || '21CS0104'}) • Final Year B.Tech CSE`
               : role === 'faculty'
               ? 'Review assigned student grievances, submit official remarks, or escalate to admin'
               : 'University-wide ticketing console with departmental routing and coordinator assignments'}

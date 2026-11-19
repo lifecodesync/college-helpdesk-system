@@ -109,13 +109,13 @@ export default function Dashboard() {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-800/80 border border-blue-700 text-blue-200 text-xs font-semibold">
                 <GraduationCap className="w-3.5 h-3.5 text-blue-300" />
-                Undergraduate Student Portal • CSE Department
+                Final Year B.Tech CSE (Semester 7) • Academic Year 2024–25
               </div>
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
                 Welcome, {user?.full_name} 🎓
               </h2>
               <p className="text-xs text-blue-100 max-w-xl">
-                Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '22CS0104'}</span> • Semester 5 B.Tech CSE • Faculty Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
+                Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '21CS0104'}</span> • Final Year (Semester 7 - B.Tech CSE) • Academic Year 2024–25 • Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
               </p>
             </div>
 
@@ -158,12 +158,12 @@ export default function Dashboard() {
               <Activity className="w-3.5 h-3.5 text-emerald-600" /> Overall Attendance
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-extrabold text-slate-900">82.5%</span>
+              <span className="text-2xl font-extrabold text-slate-900">84.5%</span>
               <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
                 Eligible (&gt;75%)
               </span>
             </div>
-            <p className="text-[10px] text-slate-500">End-sem hall ticket unlocked</p>
+            <p className="text-[10px] text-slate-500">Final-sem hall ticket unlocked</p>
           </div>
 
           <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-1">
@@ -171,12 +171,12 @@ export default function Dashboard() {
               <Award className="w-3.5 h-3.5 text-blue-600" /> Cumulative CGPA
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-extrabold text-slate-900">8.64</span>
+              <span className="text-2xl font-extrabold text-slate-900">8.72</span>
               <span className="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">
                 First Class Dist.
               </span>
             </div>
-            <p className="text-[10px] text-slate-500">Credits Earned: 88 / 160</p>
+            <p className="text-[10px] text-slate-500">Credits Earned: 132 / 160</p>
           </div>
 
           <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-1">
@@ -184,20 +184,20 @@ export default function Dashboard() {
               <BookOpen className="w-3.5 h-3.5 text-indigo-600" /> Current Semester
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-extrabold text-slate-900">22</span>
-              <span className="text-xs text-slate-500 font-medium">Credits</span>
+              <span className="text-2xl font-extrabold text-slate-900">Sem 7</span>
+              <span className="text-xs text-slate-500 font-medium">18 Credits</span>
             </div>
-            <p className="text-[10px] text-slate-500">6 Theory + 2 Practical Labs</p>
+            <p className="text-[10px] text-slate-500">Capstone Project-I + Electives</p>
           </div>
 
           <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-1">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-              <CreditCard className="w-3.5 h-3.5 text-amber-600" /> Semester Fee
+              <CreditCard className="w-3.5 h-3.5 text-amber-600" /> Final Year Fee
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-lg font-extrabold text-emerald-700">Paid & Verified</span>
+              <span className="text-lg font-extrabold text-emerald-700">Paid & Cleared</span>
             </div>
-            <p className="text-[10px] text-slate-500">Receipt: EF-2026-8890</p>
+            <p className="text-[10px] text-slate-500">Receipt: DYPCET-2024-8890</p>
           </div>
         </div>
 

@@ -29,10 +29,10 @@ export default function Login() {
   const roleOptions = [
     {
       id: 'student',
-      title: 'Student',
-      badge: 'Undergraduate Portal',
+      title: 'Final Year Student',
+      badge: 'B.Tech CSE (Semester 7)',
       icon: GraduationCap,
-      desc: 'Attendance (82.5%) & CGPA tracking, Ask College AI, Course handbooks, and Submit grievance tickets.',
+      desc: 'Academic Year 2024–25 • Attendance (84.5%), CGPA (8.72), Capstone Project Phase-I, and Support Tickets.',
       badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200',
       btnColor: 'bg-emerald-700 hover:bg-emerald-800 text-white shadow-emerald-700/20',
       iconColor: 'text-emerald-700 bg-emerald-100/80',
