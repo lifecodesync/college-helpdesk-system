@@ -33,4 +33,4 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        value: https://college-helpdesk-backend.onrender.com/api/v1
+        value: https://college-helpdesk-backend-sgsu.onrender.com/api/v1
