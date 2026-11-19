@@ -71,10 +71,16 @@ export default function Dashboard() {
   }, [user]);
 
   const handleQuickAsk = (e) => {
-    e.preventDefault();
-    if (quickQuery.trim()) {
-      navigate('/chat', { state: { initialQuery: quickQuery } });
+    if (e && e.preventDefault) e.preventDefault();
+    if (quickQuery && quickQuery.trim()) {
+      navigate('/chat', { state: { initialQuery: quickQuery.trim() } });
+    } else {
+      navigate('/chat');
     }
+  };
+
+  const handleQuickPrompt = (promptText) => {
+    navigate('/chat', { state: { initialQuery: promptText } });
   };
 
   const getPriorityColor = (p) => {
@@ -125,8 +131,17 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5 flex-wrap">
               <button
+                type="button"
+                onClick={() => navigate('/chat')}
+                className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md transition-all flex items-center gap-2 border border-blue-400/40"
+              >
+                <Bot className="w-4 h-4 text-amber-300" />
+                <span>Ask AI Assistant</span>
+              </button>
+              <button
+                type="button"
                 onClick={() => setIsTicketModalOpen(true)}
                 className="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 text-xs font-bold shadow-md transition-all flex items-center gap-2"
               >
@@ -137,24 +152,46 @@ export default function Dashboard() {
           </div>
 
           {/* Quick AI Search Bar */}
-          <form onSubmit={handleQuickAsk} className="relative z-10 mt-6 flex items-center gap-2.5 max-w-2xl">
-            <div className="relative flex-1">
-              <input
-                type="text"
-                value={quickQuery}
-                onChange={(e) => setQuickQuery(e.target.value)}
-                placeholder="Ask e.g. What is the attendance condonation criteria for semester exams?"
-                className="w-full px-4 py-3 rounded-2xl bg-white text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm"
-              />
+          <div className="relative z-10 mt-6 max-w-2xl space-y-2.5">
+            <form onSubmit={handleQuickAsk} className="flex items-center gap-2.5">
+              <div className="relative flex-1">
+                <input
+                  type="text"
+                  value={quickQuery}
+                  onChange={(e) => setQuickQuery(e.target.value)}
+                  placeholder="Ask AI anything (attendance criteria, B.Tech syllabus, fee deadlines, hall ticket)..."
+                  className="w-full px-4 py-3 rounded-2xl bg-white text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm"
+                />
+              </div>
+              <button
+                type="submit"
+                className="px-5 py-3 rounded-2xl bg-blue-800 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-2 shadow-md transition-all flex-shrink-0 border border-blue-600 cursor-pointer"
+              >
+                <Bot className="w-4 h-4 text-amber-300" />
+                <span>Ask AI Chat</span>
+              </button>
+            </form>
+
+            {/* Quick Suggestion Pills */}
+            <div className="flex items-center gap-1.5 flex-wrap text-[11px]">
+              <span className="text-blue-300 font-semibold text-[10px] uppercase tracking-wider mr-1">Quick Ask:</span>
+              {[
+                "Attendance condonation criteria",
+                "Final Year B.Tech CSE Syllabus",
+                "Re-evaluation fee & procedure",
+                "Hostel curfew timings"
+              ].map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => handleQuickPrompt(prompt)}
+                  className="px-2.5 py-1 rounded-lg bg-blue-900/80 hover:bg-blue-800 border border-blue-700/80 text-blue-100 text-[11px] transition-all hover:text-white"
+                >
+                  💡 {prompt}
+                </button>
+              ))}
             </div>
-            <button
-              type="submit"
-              className="px-5 py-3 rounded-2xl bg-blue-800 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-2 shadow-md transition-all flex-shrink-0 border border-blue-600"
-            >
-              <Bot className="w-4 h-4 text-amber-300" />
-              <span>Ask AI</span>
-            </button>
-          </form>
+          </div>
         </div>
 
         {/* Academic Vitals Row */}
@@ -349,6 +386,15 @@ export default function Dashboard() {
 
             <div className="flex items-center gap-2 flex-wrap">
               <button
+                type="button"
+                onClick={() => navigate('/chat')}
+                className="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold border border-blue-400/40 transition-all flex items-center gap-1.5 shadow-sm"
+              >
+                <Bot className="w-3.5 h-3.5 text-amber-300" />
+                <span>Ask AI Staff Assistant</span>
+              </button>
+              <button
+                type="button"
                 onClick={() => setIsNoticeModalOpen(true)}
                 className="px-3.5 py-2 rounded-xl bg-blue-800 hover:bg-blue-700 text-white text-xs font-bold border border-blue-600 transition-all flex items-center gap-1.5"
               >
@@ -356,6 +402,7 @@ export default function Dashboard() {
                 <span>+ Department Notice</span>
               </button>
               <button
+                type="button"
                 onClick={() => setIsFaqModalOpen(true)}
                 className="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
               >
@@ -541,6 +588,15 @@ export default function Dashboard() {
 
           <div className="flex items-center gap-2.5 flex-wrap">
             <button
+              type="button"
+              onClick={() => navigate('/chat')}
+              className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold border border-blue-400/40 transition-all flex items-center gap-1.5 shadow-sm"
+            >
+              <Bot className="w-4 h-4 text-amber-300" />
+              <span>Ask AI Chat (RAG)</span>
+            </button>
+            <button
+              type="button"
               onClick={() => navigate('/admin/users')}
               className="px-4 py-2.5 rounded-xl bg-blue-800 hover:bg-blue-700 text-white text-xs font-bold border border-blue-600 transition-all flex items-center gap-1.5"
             >
@@ -548,6 +604,7 @@ export default function Dashboard() {
               <span>User Directory</span>
             </button>
             <button
+              type="button"
               onClick={() => setIsNoticeModalOpen(true)}
               className="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
             >

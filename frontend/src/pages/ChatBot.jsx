@@ -22,6 +22,7 @@ export default function ChatBot() {
   const { user } = useAuth();
   const location = useLocation();
   const messagesEndRef = useRef(null);
+  const initialAskedRef = useRef(false);
 
   const [messages, setMessages] = useState([
     {
@@ -52,10 +53,11 @@ export default function ChatBot() {
   useEffect(() => {
     api.getDepartments().then(setDepartments).catch(console.error);
 
-    if (location.state?.initialQuery) {
+    if (location.state?.initialQuery && !initialAskedRef.current) {
+      initialAskedRef.current = true;
       handleAsk(location.state.initialQuery);
     }
-  }, []);
+  }, [location.state]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
