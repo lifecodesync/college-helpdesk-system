@@ -1,0 +1,42 @@
+================================================================================
+NATIONAL INSTITUTE OF ENGINEERING & TECHNOLOGY
+OFFICIAL ACADEMIC REGULATIONS & DEGREE REQUIREMENTS (2026-2027)
+================================================================================
+
+SECTION 1: PROGRAMME STRUCTURE & CREDITS
+1.1 The Bachelor of Technology (B.Tech) degree program is structured over 8 semesters (4 academic years).
+1.2 To qualify for the degree, a student must earn a minimum of 160 academic credits comprising:
+    - Basic Science Courses: 24 credits
+    - Engineering Science Courses: 20 credits
+    - Humanities and Social Sciences: 12 credits
+    - Professional Core Courses: 58 credits
+    - Professional Electives: 18 credits
+    - Open Electives: 12 credits
+    - Project Work, Internship & Seminar: 16 credits
+
+SECTION 2: ATTENDANCE NORMS & CONDONATION
+2.1 Minimum Attendance: Every candidate must secure a minimum aggregate attendance of 75% in theory and practical sessions across all registered subjects.
+2.2 Condonation of Shortage:
+    - Attendance between 65.0% and 74.9% may be condoned by the Academic Dean only on medical grounds (with hospital discharge certificate) or official participation in university-approved sports/cultural events.
+    - Prescribed condonation fee is Rs. 1,000 per course subject.
+2.3 Detainment:
+    - Students having attendance strictly below 65% in any course will NOT be eligible for condonation and shall be detained. Detained students must re-register for the course in subsequent odd/even semesters.
+
+SECTION 3: CONTINUOUS INTERNAL EVALUATION (CIE) & SEMESTER EXAMS (ESE)
+3.1 Course evaluation ratio: Continuous Internal Assessment (40 Marks) + End Semester Examination (60 Marks) = 100 Marks.
+3.2 Internal Assessment Breakdown:
+    - Two mid-term tests: 20 Marks (Best of two or average as declared by department)
+    - Assignment / Quiz / Mini Project: 10 Marks
+    - Attendance & Class Participation: 10 Marks
+3.3 Minimum Passing Criteria: A candidate must secure at least 40% in End Semester Exam (24/60) and 45% aggregate in total marks (45/100) to pass the subject (Grade C).
+
+SECTION 4: GRADING SYSTEM & CGPA CALCULATION
+Letter Grade | Grade Points | Marks Range (%)
+O            | 10           | 90 - 100
+A+           | 9            | 80 - 89
+A            | 8            | 70 - 79
+B+           | 7            | 60 - 69
+B            | 6            | 50 - 59
+C            | 5            | 45 - 49
+F (Fail)     | 0            | Less than 45
+I (Incomplete| 0            | Medical / Absent
