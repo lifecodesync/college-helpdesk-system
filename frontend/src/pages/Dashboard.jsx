@@ -126,24 +126,16 @@ export default function Dashboard() {
                   Welcome, {user?.full_name} 🎓
                 </h2>
                 <p className="text-xs text-blue-100 max-w-xl">
-                  Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '21CS0104'}</span> • Final Year (Semester 7 - B.Tech CSE) • Academic Year 2024–25 • Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
+                  Roll No: <span className="font-mono font-bold text-amber-300">{user?.roll_no || '2021020104'}</span> • Final Year (Semester 7 - B.Tech CSE) • Academic Year 2024–25 • Advisor: <span className="font-semibold text-white">Prof. Priya Verma</span>
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-2.5 flex-wrap">
-              <button
-                type="button"
-                onClick={() => navigate('/chat')}
-                className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md transition-all flex items-center gap-2 border border-blue-400/40"
-              >
-                <Bot className="w-4 h-4 text-amber-300" />
-                <span>Ask AI Assistant</span>
-              </button>
+            <div className="flex items-center gap-2.5">
               <button
                 type="button"
                 onClick={() => setIsTicketModalOpen(true)}
-                className="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 text-xs font-bold shadow-md transition-all flex items-center gap-2"
+                className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-blue-950 text-xs font-bold shadow-md transition-all flex items-center gap-2"
               >
                 <PlusCircle className="w-4 h-4" />
                 <span>+ Raise Grievance</span>
