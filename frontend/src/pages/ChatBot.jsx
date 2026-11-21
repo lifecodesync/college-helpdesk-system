@@ -28,7 +28,7 @@ export default function ChatBot() {
     {
       id: 'welcome',
       sender: 'bot',
-      text: `Hello ${user?.full_name?.split(' ')[0] || 'Student'}! I am the official AI Student Assistant for D. Y. Patil College of Engineering and Technology (DYPCET), Kolhapur. Ask me anything about examination rules, syllabus, fee deadlines, attendance policies, or hostel regulations. Every response is strictly grounded in official college documents with source citations.`,
+      text: `Hello ${user?.full_name?.split(' ')[0] || 'Student'}! I am the official AI Student Assistant for D. Y. Patil School of Engineering & Management (DYPSEM), Kolhapur — Constituent Unit of D. Y. Patil Education Society (Deemed to be University). Ask me anything about university exam rules, syllabus, MahaDBT scholarship schemes, fee installments, attendance policies, or campus regulations. Every response is strictly grounded in official college documents with source citations.`,
       sources: [],
       confidence: 1.0,
       timestamp: new Date()

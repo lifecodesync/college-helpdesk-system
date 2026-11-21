@@ -15,8 +15,8 @@ import {
   Layers
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import dypcetLogo from '../assets/dypcet-logo.png';
-import dypcetEmblem from '../assets/dypcet-emblem.png';
+import dypsemLogo from '../assets/dypsem-logo.png';
+import dypsemEmblem from '../assets/dypsem-emblem.png';
 
 export default function Login() {
   const { login, switchDemoRole } = useAuth();
@@ -113,20 +113,20 @@ export default function Login() {
           <div className="flex flex-col items-center justify-center space-y-3">
             <div className="bg-white p-3 rounded-2xl shadow-sm border border-slate-200/80 inline-flex items-center justify-center">
               <img 
-                src={dypcetLogo} 
-                alt="D. Y. Patil College of Engineering and Technology, Kolhapur" 
+                src={dypsemLogo} 
+                alt="D. Y. Patil School of Engineering & Management, Kolhapur" 
                 className="h-16 sm:h-20 w-auto object-contain" 
               />
             </div>
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-blue-900 text-[11px] font-bold tracking-wide uppercase mb-1.5">
-                Autonomous Institute • NAAC 'A' Grade • Shivaji University
+                Constituent Unit of D. Y. Patil Education Society (Deemed to be University) • NAAC 'A' Grade • AICTE Approved
               </div>
               <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                D. Y. Patil College of Engineering & Technology, Kolhapur
+                D. Y. Patil School of Engineering & Management, Kolhapur
               </h1>
               <p className="text-xs font-bold uppercase tracking-widest text-blue-900 mt-1">
-                DYPCET AI-Powered Student Helpdesk & Academic Assistance System
+                DYPSEM AI-Powered Student Helpdesk & Academic Assistance System
               </p>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Login() {
               <div className="flex items-center gap-1.5">
                 <button
                   type="button"
-                  onClick={() => prefillEmail('aarav.mehta@student.college.edu')}
+                  onClick={() => prefillEmail('aarav.mehta@student.dypsem.edu')}
                   className="text-blue-900 hover:underline font-bold"
                 >
                   Student
@@ -248,7 +248,7 @@ export default function Login() {
                 <span>•</span>
                 <button
                   type="button"
-                  onClick={() => prefillEmail('faculty.verma@college.edu')}
+                  onClick={() => prefillEmail('faculty.verma@dypsem.edu')}
                   className="text-blue-900 hover:underline font-bold"
                 >
                   Faculty
@@ -256,7 +256,7 @@ export default function Login() {
                 <span>•</span>
                 <button
                   type="button"
-                  onClick={() => prefillEmail('admin@college.edu')}
+                  onClick={() => prefillEmail('admin@dypsem.edu')}
                   className="text-blue-900 hover:underline font-bold"
                 >
                   Admin

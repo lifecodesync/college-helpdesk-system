@@ -35,11 +35,11 @@ DEPARTMENTS: List[Dict[str, Any]] = [
         "id": "11111111-1111-1111-1111-111111111111",
         "code": "CSE",
         "name": "Computer Science & Engineering",
-        "description": "B.Tech & M.Tech in Computer Science & Engineering. Autonomous curriculum covering AI, Cloud Systems, and Full-Stack Development.",
+        "description": "B.Tech & M.Tech in Computer Science & Engineering. Advanced curriculum covering AI, Cloud Systems, and Full-Stack Development.",
         "hod_name": "Dr. A. N. Jadhav",
         "email": "hod.cse@dypgroup.edu.in",
-        "phone": "+91 231 2601431",
-        "location": "Main Academic Wing, 2nd Floor, DYPCET Kasaba Bawada",
+        "phone": "+91 231 2991436",
+        "location": "Main Engineering Wing, 2nd Floor, DYPSEM, Kasaba Bawada, Kolhapur",
         "created_at": datetime.now(timezone.utc)
     },
     {
@@ -49,52 +49,52 @@ DEPARTMENTS: List[Dict[str, Any]] = [
         "description": "VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.",
         "hod_name": "Dr. S. B. Patil",
         "email": "hod.etc@dypgroup.edu.in",
-        "phone": "+91 231 2601432",
-        "location": "E&TC Block, 1st Floor, DYPCET",
+        "phone": "+91 231 2991436",
+        "location": "ETSA Block, 1st Floor, DYPSEM",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "33333333-3333-3333-3333-333333333333",
-        "code": "MECH",
-        "name": "Mechanical Engineering",
-        "description": "Automotive Engineering, Robotics & Automation, Thermal Systems, and CAD/CAM research.",
-        "hod_name": "Dr. V. R. Chougule",
-        "email": "hod.mech@dypgroup.edu.in",
-        "phone": "+91 231 2601433",
-        "location": "Mechanical Workshop Complex, DYPCET",
+        "code": "DSE",
+        "name": "Data Science & Engineering",
+        "description": "Big Data Architecture, Machine Learning, Deep Neural Networks, and Predictive Modeling.",
+        "hod_name": "Dr. S. S. Patil",
+        "email": "hod.dse@dypgroup.edu.in",
+        "phone": "+91 231 2991436",
+        "location": "Data Science Computing Complex, DYPSEM",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "44444444-4444-4444-4444-444444444444",
-        "code": "ADM",
-        "name": "Student Section & Admissions",
-        "description": "Central admissions counseling, bonafide verification, scholarships (MahaDBT/EBC), and student welfare.",
+        "code": "SCHOLAR",
+        "name": "MahaDBT Scholarship & Student Section",
+        "description": "Central admissions counseling, MahaDBT scholarship schemes (EBC, SEBC, OBC, SC/ST, Girls Free Education), bonafide verification.",
         "hod_name": "Prof. R. S. Patil",
-        "email": "studentsection@dypgroup.edu.in",
-        "phone": "+91 231 2601434",
-        "location": "Administrative Building, Ground Floor, DYPCET",
+        "email": "dyp.sem@dypgroup.edu.in",
+        "phone": "+91 231 2991436",
+        "location": "Student Section, Room 101, DYPSEM, 869 'E' D. Y. Patil Vidyanagar",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "55555555-5555-5555-5555-555555555555",
         "code": "EXAM",
-        "name": "Autonomous Examination Cell",
-        "description": "Autonomous end-semester exams, re-evaluation, grade sheets, SGPA/CGPA transcripts, and degree certificates.",
+        "name": "University Examination Cell",
+        "description": "University end-semester exams, re-evaluation, examination form clearance, and degree certificates.",
         "hod_name": "Dr. M. M. Kulkarni (COE)",
-        "email": "coe@dypgroup.edu.in",
-        "phone": "+91 231 2601435",
-        "location": "Administrative Building, Room 204, DYPCET",
+        "email": "coe@dypatilunikop.org",
+        "phone": "+91 231 2991436",
+        "location": "University Examination Center, DYPSEM",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "66666666-6666-6666-6666-666666666666",
         "code": "ACC",
-        "name": "Accounts & Finance Section",
-        "description": "College tuition fees, bus transport, hostel fee clearance, scholarship credits, and fee receipts.",
+        "name": "Accounts & Fee Section",
+        "description": "College tuition fees, installment clearance, hostel fee receipts, and MahaDBT fee adjustment.",
         "hod_name": "Mr. V. A. Bhosale",
-        "email": "accounts@dypgroup.edu.in",
-        "phone": "+91 231 2601436",
-        "location": "Administrative Building, Counter 3-5, DYPCET",
+        "email": "accounts.sem@dypgroup.edu.in",
+        "phone": "+91 231 2991436",
+        "location": "Administrative Counters 1-3, DYPSEM",
         "created_at": datetime.now(timezone.utc)
     }
 ]
@@ -102,12 +102,12 @@ DEPARTMENTS: List[Dict[str, Any]] = [
 PROFILES: List[Dict[str, Any]] = [
     {
         "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-        "email": "admin@college.edu",
+        "email": "admin@dypsem.edu",
         "password": "password123",
-        "full_name": "Dr. Ramesh Sharma (Admin)",
+        "full_name": "Dr. Ramesh Sharma (DYPSEM Admin)",
         "role": "admin",
         "department_id": "11111111-1111-1111-1111-111111111111",
-        "roll_no": "EMP-ADM-01",
+        "roll_no": "EMP-SEM-01",
         "phone": "+91 9000000001",
         "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
         "is_active": True,
@@ -115,9 +115,9 @@ PROFILES: List[Dict[str, Any]] = [
     },
     {
         "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
-        "email": "faculty.verma@college.edu",
+        "email": "faculty.verma@dypsem.edu",
         "password": "password123",
-        "full_name": "Prof. Priya Verma",
+        "full_name": "Prof. Priya Verma (DYPSEM Coordinator)",
         "role": "faculty",
         "department_id": "11111111-1111-1111-1111-111111111111",
         "roll_no": "EMP-CSE-104",
@@ -128,9 +128,9 @@ PROFILES: List[Dict[str, Any]] = [
     },
     {
         "id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
-        "email": "faculty.patel@college.edu",
+        "email": "faculty.patel@dypsem.edu",
         "password": "password123",
-        "full_name": "Prof. Amit Patel",
+        "full_name": "Prof. Amit Patel (COE Cell)",
         "role": "faculty",
         "department_id": "55555555-5555-5555-5555-555555555555",
         "roll_no": "EMP-EXM-042",
@@ -141,12 +141,12 @@ PROFILES: List[Dict[str, Any]] = [
     },
     {
         "id": "dddddddd-dddd-dddd-dddd-dddddddddddd",
-        "email": "aarav.mehta@student.college.edu",
+        "email": "aarav.mehta@student.dypsem.edu",
         "password": "password123",
         "full_name": "Aarav Mehta",
         "role": "student",
         "department_id": "11111111-1111-1111-1111-111111111111",
-        "roll_no": "21CS0104",
+        "roll_no": "2021020104",
         "phone": "+91 9000000004",
         "avatar_url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150",
         "is_active": True,
@@ -154,12 +154,12 @@ PROFILES: List[Dict[str, Any]] = [
     },
     {
         "id": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
-        "email": "sneha.reddy@student.college.edu",
+        "email": "sneha.reddy@student.dypsem.edu",
         "password": "password123",
         "full_name": "Sneha Reddy",
         "role": "student",
         "department_id": "22222222-2222-2222-2222-222222222222",
-        "roll_no": "22EC0088",
+        "roll_no": "2022020088",
         "phone": "+91 9000000005",
         "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
         "is_active": True,
@@ -170,58 +170,58 @@ PROFILES: List[Dict[str, Any]] = [
 DOCUMENTS: List[Dict[str, Any]] = [
     {
         "id": "d1111111-1111-1111-1111-111111111111",
-        "title": "DYPCET Autonomous Academic Regulations & Attendance Policy 2024–25",
-        "filename": "DYPCET_Academic_Regulations_2024_25.pdf",
+        "title": "DYPSEM University Academic Regulations & Attendance Policy 2024–25",
+        "filename": "DYPSEM_Academic_Regulations_2024_25.pdf",
         "file_type": "pdf",
         "file_size": 1845000,
-        "storage_path": "uploads/DYPCET_Academic_Regulations_2024_25.pdf",
+        "storage_path": "uploads/DYPSEM_Academic_Regulations_2024_25.pdf",
         "department_id": "11111111-1111-1111-1111-111111111111",
         "uploaded_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
         "status": "indexed",
         "chunk_count": 2,
-        "summary": "Rules regarding minimum attendance criteria (75%), medical condonation process (Rs. 1,000 fee with Dean approval), 10-point CGPA grading system, and Semester 7/8 graduation requirements.",
+        "summary": "Rules regarding minimum attendance criteria (75%), medical condonation process (Rs. 1,000 fee with Dean approval), 10-point CGPA grading system, and Semester 7/8 graduation requirements at DYPSEM Kolhapur.",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d2222222-2222-2222-2222-222222222222",
-        "title": "DYPCET B.Tech Computer Science & Engineering Final Year Syllabus (Sem 7 & 8)",
-        "filename": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf",
+        "title": "DYPSEM B.Tech Computer Science & Engineering Final Year Syllabus (Sem 7 & 8)",
+        "filename": "DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf",
         "file_type": "pdf",
         "file_size": 2450000,
-        "storage_path": "uploads/DYPCET_BTech_CSE_FinalYear_Syllabus.pdf",
+        "storage_path": "uploads/DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf",
         "department_id": "11111111-1111-1111-1111-111111111111",
         "uploaded_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
         "status": "indexed",
         "chunk_count": 2,
-        "summary": "Detailed DYPCET CSE autonomous curriculum for Final Year: Semester 7 courses (Deep Learning, Cloud Computing, Big Data, Capstone Project Phase-I) and Semester 8 (Industry Internship / Major Project Phase-II).",
+        "summary": "Detailed DYPSEM CSE curriculum for Final Year: Semester 7 courses (Deep Learning, Cloud Computing, Big Data, Capstone Project Phase-I) and Semester 8 (Industry Internship / Major Project Phase-II).",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d3333333-3333-3333-3333-333333333333",
-        "title": "DYPCET Student Grievance Redressal & Campus Guidelines 2024–25",
-        "filename": "DYPCET_Student_Grievance_Guidelines.pdf",
+        "title": "DYPSEM MahaDBT Scholarship Schemes & Fee Concession Manual 2024–25",
+        "filename": "DYPSEM_MahaDBT_Scholarship_Manual.pdf",
         "file_type": "pdf",
         "file_size": 950000,
-        "storage_path": "uploads/DYPCET_Student_Grievance_Guidelines.pdf",
+        "storage_path": "uploads/DYPSEM_MahaDBT_Scholarship_Manual.pdf",
         "department_id": "44444444-4444-4444-4444-444444444444",
         "uploaded_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
         "status": "indexed",
-        "chunk_count": 1,
-        "summary": "Standard Operating Procedure (SOP) for student grievances at DYPCET Kolhapur: hall ticket issues, fee receipt errors, hostel curfew rules, and anti-ragging measures.",
+        "chunk_count": 2,
+        "summary": "Official Maharashtra MahaDBT scholarship criteria for DYPSEM (U-0294): Rajarshi Shahu Maharaj EBC/EWS, Free Professional Education for Girls, SEBC, OBC, SC/ST, and application renewal process.",
         "created_at": datetime.now(timezone.utc)
     },
     {
         "id": "d4444444-4444-4444-4444-444444444444",
-        "title": "DYPCET Autonomous Examination Cell Rules & Re-evaluation Norms",
-        "filename": "DYPCET_Exam_Cell_Regulations.pdf",
+        "title": "DYPSEM Readmission Policy, Fee Installments & University Exam Clearance",
+        "filename": "DYPSEM_Readmission_Fee_Clearance_Notice.pdf",
         "file_type": "pdf",
         "file_size": 1120000,
-        "storage_path": "uploads/DYPCET_Exam_Cell_Regulations.pdf",
+        "storage_path": "uploads/DYPSEM_Readmission_Fee_Clearance_Notice.pdf",
         "department_id": "55555555-5555-5555-5555-555555555555",
         "uploaded_by": "cccccccc-cccc-cccc-cccc-cccccccccccc",
         "status": "indexed",
-        "chunk_count": 1,
-        "summary": "Rules for DYPCET autonomous semester examinations: script photocopy application (Rs. 400), challenge re-evaluation (Rs. 1,000), grade improvement exams, and degree clearance.",
+        "chunk_count": 2,
+        "summary": "Urgent readmission regulations: mandatory 1st installment clearance for university examination form filling and internal marks upload, challenge re-evaluation norms (Rs 1,000), and answer script photocopy.",
         "created_at": datetime.now(timezone.utc)
     }
 ]
@@ -232,32 +232,40 @@ DOCUMENT_CHUNKS: List[Dict[str, Any]] = [
         "document_id": "d1111111-1111-1111-1111-111111111111",
         "chunk_index": 1,
         "page_number": 1,
-        "content": "DYPCET AUTONOMOUS REGULATIONS - SECTION 4: ATTENDANCE REQUIREMENTS\nEvery candidate registered for B.Tech at D. Y. Patil College of Engineering and Technology, Kolhapur must maintain minimum 75% overall attendance aggregate across theory and practical labs. Students having attendance between 65% and 74.9% with valid medical certificates or institutional sports representation may receive condonation from the Dean (Academics) on payment of Rs. 1,000 condonation fee per course. Attendance below 65% attracts detention from End Semester Examination (ESE).",
-        "metadata": {"section": "4.1", "source": "DYPCET_Academic_Regulations_2024_25.pdf", "college": "DYPCET Kolhapur"}
+        "content": "DYPSEM REGULATIONS - SECTION 4: ATTENDANCE REQUIREMENTS (ACADEMIC YEAR 2024–25)\nEvery candidate registered for B.Tech / Management programs at D. Y. Patil School of Engineering and Management (DYPSEM), Kasaba Bawada, Kolhapur must maintain minimum 75% overall attendance aggregate across theory and practical courses. Students having attendance between 65% and 74.9% with valid medical certificates or institutional sports representation may receive condonation from the Dean upon payment of Rs. 1,000 condonation fee per course. Attendance below 65% attracts detention from university examinations.",
+        "metadata": {"section": "4.1", "source": "DYPSEM_Academic_Regulations_2024_25.pdf", "college": "DYPSEM Kolhapur"}
     },
     {
         "id": "c2222222-0001-0000-0000-000000000001",
         "document_id": "d2222222-2222-2222-2222-222222222222",
         "chunk_index": 1,
         "page_number": 1,
-        "content": "DYPCET B.TECH CSE FINAL YEAR (SEMESTER 7) SYLLABUS & CURRICULUM:\n1. Deep Learning & Neural Networks (Course Code: CS401) - 4 Credits (CNNs, RNNs, Transformers, Attention Mechanism, PyTorch/TensorFlow).\n2. Cloud Computing & DevOps (Course Code: CS402) - 4 Credits (AWS/GCP architectures, Docker, Kubernetes, CI/CD pipelines).\n3. Big Data Analytics (Course Code: CS403) - 3 Credits (Hadoop HDFS, Apache Spark, MapReduce, Kafka).\n4. Program Elective III: Cyber Security & Digital Forensics (CS404) - 3 Credits.\n5. Capstone Project Phase-I (CS405) - 4 Credits (Problem identification, SRS, Architectural Design, Prototype demo).\nTotal Semester 7 Credits: 18 Credits.",
-        "metadata": {"semester": "7", "department": "CSE", "source": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf"}
+        "content": "DYPSEM B.TECH CSE FINAL YEAR (SEMESTER 7) SYLLABUS & CURRICULUM:\n1. Deep Learning & Neural Networks (Course Code: CS401) - 4 Credits (CNNs, RNNs, Transformers, Attention Mechanism, PyTorch/TensorFlow).\n2. Cloud Computing & DevOps (Course Code: CS402) - 4 Credits (AWS/GCP architectures, Docker, Kubernetes, CI/CD pipelines).\n3. Big Data Analytics (Course Code: CS403) - 3 Credits (Hadoop HDFS, Apache Spark, MapReduce, Kafka).\n4. Program Elective III: Cyber Security & Digital Forensics (CS404) - 3 Credits.\n5. Capstone Project Phase-I (CS405) - 4 Credits (Problem identification, SRS, Architectural Design, Prototype demo).\nTotal Semester 7 Credits: 18 Credits.",
+        "metadata": {"semester": "7", "department": "CSE", "source": "DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf"}
     },
     {
         "id": "c2222222-0002-0000-0000-000000000002",
         "document_id": "d2222222-2222-2222-2222-222222222222",
         "chunk_index": 2,
         "page_number": 2,
-        "content": "DYPCET B.TECH CSE FINAL YEAR (SEMESTER 8) CURRICULUM:\n1. Industry Internship / Full Semester Industrial Training (Course Code: CS406) - 12 Credits (Minimum 16 weeks duration at recognized tech organization with weekly mentor evaluation).\nOR Major Capstone Project Phase-II (CS407) - 12 Credits (Implementation, Testing, Paper Publication in Scopus/UGC CARE journal, External Defense).\n2. Open Elective IV: Management Information Systems / Intellectual Property Rights (CS408) - 3 Credits.\nTotal Semester 8 Credits: 15 Credits. Overall Degree requirement: 160 Credits.",
-        "metadata": {"semester": "8", "department": "CSE", "source": "DYPCET_BTech_CSE_FinalYear_Syllabus.pdf"}
+        "content": "DYPSEM B.TECH CSE FINAL YEAR (SEMESTER 8) CURRICULUM:\n1. Industry Internship / Full Semester Industrial Training (Course Code: CS406) - 12 Credits (Minimum 16 weeks duration at recognized tech organization with weekly mentor evaluation).\nOR Major Capstone Project Phase-II (CS407) - 12 Credits (Implementation, Testing, Paper Publication in Scopus/UGC CARE journal, External Defense).\n2. Open Elective IV: Management Information Systems / Intellectual Property Rights (CS408) - 3 Credits.\nTotal Semester 8 Credits: 15 Credits. Overall Degree requirement: 160 Credits.",
+        "metadata": {"semester": "8", "department": "CSE", "source": "DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf"}
+    },
+    {
+        "id": "c3333333-0001-0000-0000-000000000001",
+        "document_id": "d3333333-3333-3333-3333-333333333333",
+        "chunk_index": 1,
+        "page_number": 1,
+        "content": "MAHADBT SCHOLARSHIP SCHEMES (DYPSEM CIRCULAR REF: DYPSEM / 261 / 2024-25)\nPortal: https://mahadbt.maharashtra.gov.in\nInstitute Selection: D. Y. Patil Educational Society (Deemed to be University) - (U-0294), Kolhapur - (Technical Education)\nAll Scheme Categories:\n1. Open (EBC/EWS) Male: Income up to Rs. 8.00 Lakhs -> Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Scheme (50% Tuition & Exam Fee).\n2. Open (EBC/EWS) Girls: Income up to Rs. 8.00 Lakhs -> Free Professional Education Scheme for Girls - Technical Education (100% Tuition & Exam Fee).\n3. SEBC: Income up to Rs. 8.00 Lakhs with Non-Creamy Layer -> Rajarshi Chhatrapati Shahu Maharaj Tuition Fee Scholarship (SEBC).\n4. SEBC Girls: Free Professional Education Scheme for Girls.\n5. OBC: Income up to Rs. 1.50 Lakhs (Post Matric Scholarship); Rs. 1.50L to 8.00L with NCL (Tuition & Exam Fees).\n6. OBC Girls: 100% Free Professional Education Scheme for Girls.\n7. VJNT & SBC: Post Matric Scholarship & Tuition/Exam Fee Reimbursement.\n8. SC: Income up to 2.50 Lakhs (Government of India Post-Matric Scholarship); Above 2.50 Lakhs (Post-Matric Tuition Fee Freeship).",
+        "metadata": {"source": "DYPSEM_MahaDBT_Scholarship_Manual.pdf", "college": "DYPSEM Kolhapur"}
     },
     {
         "id": "c4444444-0001-0000-0000-000000000001",
         "document_id": "d4444444-4444-4444-4444-444444444444",
         "chunk_index": 1,
         "page_number": 1,
-        "content": "EXAMINATION CELL - RE-EVALUATION AND SCRUTINY PROCEDURES\nStudents unsatisfied with their end-semester evaluation may apply for script photocopy or re-evaluation within 10 days of result declaration. Fees:\n1. Photocopy of answer booklet: Rs. 400 per course.\n2. Re-evaluation fee: Rs. 1,000 per course.\nIf re-evaluation results in an increase of 15% or more marks over the original score, 50% of the re-evaluation fee will be refunded to the student account.",
-        "metadata": {"section": "5.3", "source": "Exam_Cell_Guidelines.pdf", "page": 1}
+        "content": "READMISSION & 1ST INSTALLMENT FEE CLEARANCE (DYPSEM URGENT NOTICE)\nStudents whose names are listed for non-payment of 1st installment fees must pay their pending fee immediately to complete the readmission process.\nCrucial Regulations:\n1. Students who have not completed readmission will NOT be permitted to fill the University Examination Form.\n2. Internal marks will NOT be uploaded to the University Examination Portal until the readmission process is completed.\n3. The institute will not be responsible for any academic loss or exam detention resulting from non-compliance.\nAddress for payment inquiries: Accounts Office, Room 101, DYPSEM, 869 'E' D. Y. Patil Vidyanagar, Kasaba Bawada, Kolhapur (Phone: 0231-2991436).",
+        "metadata": {"source": "DYPSEM_Readmission_Fee_Clearance_Notice.pdf", "college": "DYPSEM Kolhapur"}
     }
 ]
 
@@ -331,8 +339,20 @@ TICKET_COMMENTS: List[Dict[str, Any]] = [
 NOTICES: List[Dict[str, Any]] = [
     {
         "id": "n1111111-1111-1111-1111-111111111111",
-        "title": "Notice: End Semester Examination Timetable - Nov/Dec 2026",
-        "content": "The detailed date sheet for B.Tech regular and backlog end-semester examinations has been published on the notice board and portal. Hall tickets can be downloaded starting next Monday.",
+        "title": "DYPSEM / 261 / 2024-25: Important Notice - MahaDBT Scholarship Schemes (Academic Year 2024–25)",
+        "content": "All eligible students of B.Tech (CSE, DSE, ETC, ELE), BBA, BCA, MBA & MCA are required to apply for MahaDBT scholarships on mahadbt.maharashtra.gov.in. Select Institute: 'D. Y. Patil Educational Society (Deemed to be University) - (U-0294), Kolhapur - (Technical Education)'. Schemes: Rajarshi Shahu Maharaj Shikshan Shulkh Shishyavrutti (EBC/EWS Male up to 8L), Free Professional Education Scheme for Girls (100% tuition/exam fee for EBC, SEBC, OBC Girls), SEBC, Post-Matric OBC, VJNT, SC/ST.",
+        "category": "Scholarships",
+        "department_id": "44444444-4444-4444-4444-444444444444",
+        "is_pinned": True,
+        "target_audience": "students",
+        "attachment_url": None,
+        "created_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "created_at": datetime.now(timezone.utc)
+    },
+    {
+        "id": "n2222222-2222-2222-2222-222222222222",
+        "title": "Urgent & Important Notice: Readmission & Fee 1st Installment Clearance for University Exams",
+        "content": "Students with pending 1st installment fees must complete readmission immediately. Note: Students who have not completed readmission will NOT be permitted to fill the University Examination Form, and internal marks will not be uploaded to the University Examination Portal.",
         "category": "Examinations",
         "department_id": "55555555-5555-5555-5555-555555555555",
         "is_pinned": True,
@@ -342,27 +362,15 @@ NOTICES: List[Dict[str, Any]] = [
         "created_at": datetime.now(timezone.utc)
     },
     {
-        "id": "n2222222-2222-2222-2222-222222222222",
-        "title": "Annual Inter-College Hackathon 'CodeStorm 2026' Registrations Open",
-        "content": "CSE department is hosting the 36-hour National Hackathon with prizes worth Rs. 2,00,000. Form teams of 3 to 4 members. Registration deadline: Nov 28, 2026.",
+        "id": "n3333333-3333-3333-3333-333333333333",
+        "title": "DYPSEM 'Technologia' & 'Hackoutsav' National Symposium Registrations",
+        "content": "School of Engineering & Management is hosting the annual national technical symposium and hackathon with cash prizes worth Rs. 2,00,000. Open to all engineering and management students.",
         "category": "Events",
         "department_id": "11111111-1111-1111-1111-111111111111",
-        "is_pinned": True,
-        "target_audience": "all",
-        "attachment_url": None,
-        "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
-        "created_at": datetime.now(timezone.utc)
-    },
-    {
-        "id": "n3333333-3333-3333-3333-333333333333",
-        "title": "Hostel Wi-Fi Maintenance Window Notice",
-        "content": "Campus IT will carry out high-speed optic fiber backbone maintenance on Saturday from 2:00 AM to 6:00 AM. Internet services in Hostels A, B and C will remain intermittent.",
-        "category": "Campus Life",
-        "department_id": "44444444-4444-4444-4444-444444444444",
         "is_pinned": False,
         "target_audience": "all",
         "attachment_url": None,
-        "created_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
         "created_at": datetime.now(timezone.utc)
     }
 ]
@@ -405,6 +413,26 @@ FAQS: List[Dict[str, Any]] = [
         "category": "Accounts",
         "department_id": "66666666-6666-6666-6666-666666666666",
         "view_count": 75,
+        "is_published": True,
+        "created_at": datetime.now(timezone.utc)
+    },
+    {
+        "id": "f5555555-5555-5555-5555-555555555555",
+        "question": "What are the MahaDBT scholarship schemes and eligibility for DYPSEM students?",
+        "answer": "On the MahaDBT portal (select institute: D. Y. Patil Educational Society Deemed to be University, Code U-0294): 1) Open/EBC/EWS Male (income up to 8L) get 50% tuition & exam fees under Rajarshi Shahu Maharaj Scheme; 2) EBC/SEBC/OBC Girls get 100% free tuition & exam fees under the Free Professional Education Scheme for Girls; 3) SEBC, OBC, VJNT, and SC/ST receive post-matric scholarship/freeship.",
+        "category": "Scholarships",
+        "department_id": "44444444-4444-4444-4444-444444444444",
+        "view_count": 210,
+        "is_published": True,
+        "created_at": datetime.now(timezone.utc)
+    },
+    {
+        "id": "f6666666-6666-6666-6666-666666666666",
+        "question": "What happens if 1st installment readmission fee is not paid before exams?",
+        "answer": "As per DYPSEM university exam cell policy, students who have not completed readmission by paying the 1st installment will be barred from filling the University Examination Form, and their internal assessment marks will not be uploaded to the University Examination Portal.",
+        "category": "Examinations",
+        "department_id": "55555555-5555-5555-5555-555555555555",
+        "view_count": 185,
         "is_published": True,
         "created_at": datetime.now(timezone.utc)
     }

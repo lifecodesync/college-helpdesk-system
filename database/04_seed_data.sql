@@ -3,15 +3,15 @@
 -- Comprehensive Seed Data for Testing & Evaluation
 -- ==============================================================================
 
--- 1. Insert Departments (D. Y. Patil College of Engineering & Technology, Kolhapur)
+-- 1. Insert Departments (D. Y. Patil School of Engineering & Management, Kolhapur)
 INSERT INTO departments (id, code, name, description, hod_name, email, phone, location)
 VALUES
-  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'B.Tech & M.Tech in Computer Science & Engineering. Autonomous curriculum covering AI, Cloud Systems, and Full-Stack Development.', 'Dr. A. N. Jadhav', 'hod.cse@dypgroup.edu.in', '+91 231 2601431', 'Main Academic Wing, 2nd Floor, DYPCET Kasaba Bawada'),
-  ('22222222-2222-2222-2222-222222222222', 'ETC', 'Electronics & Telecommunication', 'VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.', 'Dr. S. B. Patil', 'hod.etc@dypgroup.edu.in', '+91 231 2601432', 'E&TC Block, 1st Floor, DYPCET'),
-  ('33333333-3333-3333-3333-333333333333', 'MECH', 'Mechanical Engineering', 'Automotive Engineering, Robotics & Automation, Thermal Systems, and CAD/CAM research.', 'Dr. V. R. Chougule', 'hod.mech@dypgroup.edu.in', '+91 231 2601433', 'Mechanical Workshop Complex, DYPCET'),
-  ('44444444-4444-4444-4444-444444444444', 'ADM', 'Student Section & Admissions', 'Central admissions counseling, bonafide verification, scholarships (MahaDBT/EBC), and student welfare.', 'Prof. R. S. Patil', 'studentsection@dypgroup.edu.in', '+91 231 2601434', 'Administrative Building, Ground Floor, DYPCET'),
-  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'Autonomous Examination Cell', 'Autonomous end-semester exams, re-evaluation, grade sheets, SGPA/CGPA transcripts, and degree certificates.', 'Dr. M. M. Kulkarni (COE)', 'coe@dypgroup.edu.in', '+91 231 2601435', 'Administrative Building, Room 204, DYPCET'),
-  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Finance Section', 'College tuition fees, bus transport, hostel fee clearance, scholarship credits, and fee receipts.', 'Mr. V. A. Bhosale', 'accounts@dypgroup.edu.in', '+91 231 2601436', 'Administrative Building, Counter 3-5, DYPCET')
+  ('11111111-1111-1111-1111-111111111111', 'CSE', 'Computer Science & Engineering', 'B.Tech & M.Tech in Computer Science & Engineering. Advanced curriculum covering AI, Cloud Systems, and Full-Stack Development.', 'Dr. A. N. Jadhav', 'hod.cse@dypgroup.edu.in', '+91 231 2991436', 'Main Engineering Wing, 2nd Floor, DYPSEM, Kasaba Bawada, Kolhapur'),
+  ('22222222-2222-2222-2222-222222222222', 'ETC', 'Electronics & Telecommunication', 'VLSI design, Embedded Systems, IoT, Robotics, and Wireless Communication laboratories.', 'Dr. S. B. Patil', 'hod.etc@dypgroup.edu.in', '+91 231 2991436', 'ETSA Block, 1st Floor, DYPSEM'),
+  ('33333333-3333-3333-3333-333333333333', 'DSE', 'Data Science & Engineering', 'Big Data Architecture, Machine Learning, Deep Neural Networks, and Predictive Modeling.', 'Dr. S. S. Patil', 'hod.dse@dypgroup.edu.in', '+91 231 2991436', 'Data Science Computing Complex, DYPSEM'),
+  ('44444444-4444-4444-4444-444444444444', 'SCHOLAR', 'MahaDBT Scholarship & Student Section', 'Central admissions counseling, MahaDBT scholarship schemes (EBC, SEBC, OBC, SC/ST, Girls Free Education), bonafide verification.', 'Prof. R. S. Patil', 'dyp.sem@dypgroup.edu.in', '+91 231 2991436', 'Student Section, Room 101, DYPSEM, 869 E D. Y. Patil Vidyanagar'),
+  ('55555555-5555-5555-5555-555555555555', 'EXAM', 'University Examination Cell', 'University end-semester exams, re-evaluation, examination form clearance, and degree certificates.', 'Dr. M. M. Kulkarni (COE)', 'coe@dypatilunikop.org', '+91 231 2991436', 'University Examination Center, DYPSEM'),
+  ('66666666-6666-6666-6666-666666666666', 'ACC', 'Accounts & Fee Section', 'College tuition fees, installment clearance, hostel fee receipts, and MahaDBT fee adjustment.', 'Mr. V. A. Bhosale', 'accounts.sem@dypgroup.edu.in', '+91 231 2991436', 'Administrative Counters 1-3, DYPSEM')
 ON CONFLICT (id) DO UPDATE SET
   code = EXCLUDED.code,
   name = EXCLUDED.name,
@@ -25,24 +25,29 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO profiles (id, email, full_name, role, department_id, roll_no, phone, avatar_url)
 VALUES
   -- Admin
-  ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'admin@college.edu', 'Dr. Ramesh Sharma (Admin)', 'admin', '11111111-1111-1111-1111-111111111111', 'EMP-ADM-01', '+91 9000000001', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150'),
+  ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'admin@dypsem.edu', 'Dr. Ramesh Sharma (DYPSEM Admin)', 'admin', '11111111-1111-1111-1111-111111111111', 'EMP-SEM-01', '+91 9000000001', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150'),
   -- Faculty
-  ('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'faculty.verma@college.edu', 'Prof. Priya Verma', 'faculty', '11111111-1111-1111-1111-111111111111', 'EMP-CSE-104', '+91 9000000002', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150'),
-  ('cccccccc-cccc-cccc-cccc-cccccccccccc', 'faculty.patel@college.edu', 'Prof. Amit Patel', 'faculty', '55555555-5555-5555-5555-555555555555', 'EMP-EXM-042', '+91 9000000003', 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150'),
+  ('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'faculty.verma@dypsem.edu', 'Prof. Priya Verma (DYPSEM Coordinator)', 'faculty', '11111111-1111-1111-1111-111111111111', 'EMP-CSE-104', '+91 9000000002', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150'),
+  ('cccccccc-cccc-cccc-cccc-cccccccccccc', 'faculty.patel@dypsem.edu', 'Prof. Amit Patel (COE Cell)', 'faculty', '55555555-5555-5555-5555-555555555555', 'EMP-EXM-042', '+91 9000000003', 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150'),
   -- Students
-  ('dddddddd-dddd-dddd-dddd-dddddddddddd', 'aarav.mehta@student.college.edu', 'Aarav Mehta', 'student', '11111111-1111-1111-1111-111111111111', '22CS0104', '+91 9000000004', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
-  ('eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'sneha.reddy@student.college.edu', 'Sneha Reddy', 'student', '22222222-2222-2222-2222-222222222222', '22EC0088', '+91 9000000005', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150'),
-  ('ffffffff-ffff-ffff-ffff-ffffffffffff', 'rohan.das@student.college.edu', 'Rohan Das', 'student', '33333333-3333-3333-3333-333333333333', '23ME0052', '+91 9000000006', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
-ON CONFLICT (id) DO NOTHING;
+  ('dddddddd-dddd-dddd-dddd-dddddddddddd', 'aarav.mehta@student.dypsem.edu', 'Aarav Mehta (Final Year B.Tech CSE)', 'student', '11111111-1111-1111-1111-111111111111', '2021020104', '+91 9000000004', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
+  ('eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'sneha.reddy@student.dypsem.edu', 'Sneha Reddy', 'student', '22222222-2222-2222-2222-222222222222', '2022020088', '+91 9000000005', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150'),
+  ('ffffffff-ffff-ffff-ffff-ffffffffffff', 'rohan.das@student.dypsem.edu', 'Rohan Das', 'student', '33333333-3333-3333-3333-333333333333', '2023020052', '+91 9000000006', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
+ON CONFLICT (id) DO UPDATE SET
+  full_name = EXCLUDED.full_name,
+  email = EXCLUDED.email,
+  roll_no = EXCLUDED.roll_no;
 
 -- 3. Insert Documents
 INSERT INTO documents (id, title, filename, file_type, file_size, storage_path, department_id, uploaded_by, status, chunk_count, summary)
 VALUES
-  ('d1111111-1111-1111-1111-111111111111', 'Academic Regulations & Attendance Policy 2026', 'Academic_Regulations_2026.pdf', 'pdf', 1425000, 'documents/Academic_Regulations_2026.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 4, 'Rules regarding minimum attendance criteria, internal grading breakdown, condonation process, and credit requirements for graduation.'),
-  ('d2222222-2222-2222-2222-222222222222', 'Tuition Fee Payment, Scholarship & Refund Rules', 'Fee_Payment_Guidelines.pdf', 'pdf', 845000, 'documents/Fee_Payment_Guidelines.pdf', '66666666-6666-6666-6666-666666666666', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 3, 'Semester fee deadlines, payment methods (Net Banking/UPI), late fine calculation, installment schemes, and refund percentages upon withdrawal.'),
-  ('d3333333-3333-3333-3333-333333333333', 'Campus Hostel Rules, Curfew & Mess Regulations', 'Hostel_Rules_and_Mess_Policy.docx', 'docx', 620000, 'documents/Hostel_Rules_and_Mess_Policy.docx', '44444444-4444-4444-4444-444444444444', 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'indexed', 3, 'Curfew timings for boys and girls hostels, leave application procedures, mess menu rebate norms, visitors policy, and anti-ragging helpline contacts.'),
-  ('d4444444-4444-4444-4444-444444444444', 'Examination Cell Rules, Malpractice and Re-evaluation', 'Exam_Cell_Guidelines.pdf', 'pdf', 910000, 'documents/Exam_Cell_Guidelines.pdf', '55555555-5555-5555-5555-555555555555', 'cccccccc-cccc-cccc-cccc-cccccccccccc', 'indexed', 3, 'Procedure for end-semester re-evaluation, challenging evaluation, supplementary exam registration fees, and code of conduct in examination halls.')
-ON CONFLICT (id) DO NOTHING;
+  ('d1111111-1111-1111-1111-111111111111', 'DYPSEM University Academic Regulations & Attendance Policy 2024–25', 'DYPSEM_Academic_Regulations_2024_25.pdf', 'pdf', 1845000, 'documents/DYPSEM_Academic_Regulations_2024_25.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 4, 'Rules regarding minimum attendance criteria (75%), medical condonation process (Rs. 1,000 fee with Dean approval), 10-point CGPA grading system, and Semester 7/8 graduation requirements at DYPSEM Kolhapur.'),
+  ('d2222222-2222-2222-2222-222222222222', 'DYPSEM B.Tech Computer Science & Engineering Final Year Syllabus (Sem 7 & 8)', 'DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf', 'pdf', 2450000, 'documents/DYPSEM_BTech_CSE_FinalYear_Syllabus.pdf', '11111111-1111-1111-1111-111111111111', 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'indexed', 3, 'Detailed DYPSEM CSE curriculum for Final Year: Semester 7 courses (Deep Learning, Cloud Computing, Big Data, Capstone Project Phase-I) and Semester 8 (Industry Internship / Major Project Phase-II).'),
+  ('d3333333-3333-3333-3333-333333333333', 'DYPSEM MahaDBT Scholarship Schemes & Fee Concession Manual 2024–25', 'DYPSEM_MahaDBT_Scholarship_Manual.pdf', 'pdf', 950000, 'documents/DYPSEM_MahaDBT_Scholarship_Manual.pdf', '44444444-4444-4444-4444-444444444444', 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 'indexed', 3, 'Official Maharashtra MahaDBT scholarship criteria for DYPSEM (U-0294): Rajarshi Shahu Maharaj EBC/EWS, Free Professional Education for Girls, SEBC, OBC, SC/ST, and application renewal process.'),
+  ('d4444444-4444-4444-4444-444444444444', 'DYPSEM Readmission Policy, Fee Installments & University Exam Clearance', 'DYPSEM_Readmission_Fee_Clearance_Notice.pdf', 'pdf', 1120000, 'documents/DYPSEM_Readmission_Fee_Clearance_Notice.pdf', '55555555-5555-5555-5555-555555555555', 'cccccccc-cccc-cccc-cccc-cccccccccccc', 'indexed', 3, 'Urgent readmission regulations: mandatory 1st installment clearance for university examination form filling and internal marks upload, challenge re-evaluation norms (Rs 1,000), and answer script photocopy.')
+ON CONFLICT (id) DO UPDATE SET
+  title = EXCLUDED.title,
+  summary = EXCLUDED.summary;
 
 -- 4. Insert Document Chunks (Ready for text matching and vector indexing)
 INSERT INTO document_chunks (id, document_id, chunk_index, page_number, content, metadata)

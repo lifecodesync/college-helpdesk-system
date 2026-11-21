@@ -90,12 +90,16 @@ def switch_demo_role(req: SwitchRoleRequest):
     """
     target_role = req.role.lower()
     email_map = {
-        "admin": "admin@college.edu",
-        "faculty": "faculty.verma@college.edu",
-        "student": "aarav.mehta@student.college.edu"
+        "admin": ["admin@dypsem.edu", "admin@dypgroup.edu.in", "admin@college.edu"],
+        "faculty": ["faculty.verma@dypsem.edu", "faculty.verma@dypgroup.edu.in", "faculty.verma@college.edu"],
+        "student": ["aarav.mehta@student.dypsem.edu", "aarav.mehta@student.dypcet.ac.in", "aarav.mehta@student.college.edu"]
     }
-    target_email = email_map.get(target_role, "aarav.mehta@student.college.edu")
-    user = Database.get_profile_by_email(target_email)
+    possible_emails = email_map.get(target_role, ["aarav.mehta@student.dypsem.edu"])
+    user = None
+    for em in possible_emails:
+        user = Database.get_profile_by_email(em)
+        if user:
+            break
     if not user:
         user = Database.get_profiles()[0]
     

@@ -31,7 +31,7 @@ import StatCard from '../components/StatCard';
 import TicketModal from '../components/TicketModal';
 import NoticeEditModal from '../components/NoticeEditModal';
 import FaqModal from '../components/FaqModal';
-import dypcetEmblem from '../assets/dypcet-emblem.png';
+import dypsemEmblem from '../assets/dypsem-emblem.png';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -115,7 +115,7 @@ export default function Dashboard() {
           <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="flex items-start gap-4">
               <div className="hidden sm:flex w-14 h-14 rounded-2xl bg-white p-1.5 shadow-lg border border-blue-200/50 flex-shrink-0 items-center justify-center">
-                <img src={dypcetEmblem} alt="DYPCET Emblem" className="w-full h-full object-contain" />
+                <img src={dypsemEmblem} alt="DYPSEM Emblem" className="w-full h-full object-contain" />
               </div>
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-800/80 border border-blue-700 text-blue-200 text-xs font-semibold">
@@ -240,7 +240,7 @@ export default function Dashboard() {
             <div className="flex items-baseline gap-2">
               <span className="text-lg font-extrabold text-emerald-700">Paid & Cleared</span>
             </div>
-            <p className="text-[10px] text-slate-500">Receipt: DYPCET-2024-8890</p>
+            <p className="text-[10px] text-slate-500">Receipt: DYPSEM-2024-8890</p>
           </div>
         </div>
 

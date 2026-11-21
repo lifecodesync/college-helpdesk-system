@@ -17,7 +17,7 @@ import {
   LogOut
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import dypcetEmblem from '../assets/dypcet-emblem.png';
+import dypsemEmblem from '../assets/dypsem-emblem.png';
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   const { user, logout } = useAuth();
@@ -80,11 +80,11 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         {/* College Seal & Header */}
         <div className="flex items-center gap-3 px-4 h-16 border-b border-slate-200 bg-slate-50/80">
           <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shadow-sm flex-shrink-0">
-            <img src={dypcetEmblem} alt="DYPCET Emblem" className="w-full h-full object-contain" />
+            <img src={dypsemEmblem} alt="DYPSEM Emblem" className="w-full h-full object-contain" />
           </div>
           <div className="min-w-0">
             <h1 className="font-bold text-slate-900 text-sm tracking-tight truncate flex items-center gap-1.5">
-              DYPCET EduAssist
+              DYPSEM EduAssist
             </h1>
             <p className="text-[10px] text-blue-900 font-bold truncate uppercase tracking-wider">
               {getRoleHeader()}
@@ -98,7 +98,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             <span className="font-semibold text-blue-950">Academic Year 2024–25 (Final Year)</span>
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-200" title="System Active" />
           </div>
-          <p className="text-[10px] text-blue-800/80 mt-0.5 truncate">D. Y. Patil College of Eng. & Tech., Kolhapur</p>
+          <p className="text-[10px] text-blue-800/80 mt-0.5 truncate">D. Y. Patil School of Eng. & Management</p>
         </div>
 
         {/* Navigation Links */}
