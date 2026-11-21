@@ -23,7 +23,8 @@ import {
   Activity,
   Award,
   CreditCard,
-  Briefcase
+  Briefcase,
+  ClipboardList
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { api } from '../services/api';
